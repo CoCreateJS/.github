@@ -62,9 +62,7 @@ async function boot() {
       // Modules loaded across all worker processes
       const { default: Usage } = await import('@cocreate/usage');
       await import('@cocreate/organizations');
-      await import('@cocreate/unique');
       await import('@cocreate/users');
-      await import('@cocreate/url-uploader');
 
       new Usage(server.organization_id || server.organizationID);
 
