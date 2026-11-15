@@ -8,57 +8,76 @@ From declarative interfaces to distributed infrastructure, CoCreateJS unifies ap
 
 Build applications with JavaScript. Connect AI through MCP. Give authorized agents the tools to understand, build, and operate your applications.
 
-CoCreateJS brings together two independent but complementary runtimes, a growing collection of reusable modules, and integrated services designed to support the complete application lifecycle.
+CoCreateJS brings together three complementary pillars—**CoCreateClient, CoCreateServer, and CoCreateAI**—supported by a growing ecosystem of reusable modules, database engines, integrations, and infrastructure services.
 
-### [CoCreateClient](https://github.com/CoCreateJS/CoCreateJS)
+Together, they provide a connected foundation for creating applications, running them across environments, and turning business objectives into executable workflows.
+
+**One ecosystem. Three pillars. Unlimited possibilities.**
+
+---
+
+## The Three Pillars
+
+### [CoCreateClient](https://github.com/CoCreateJS/Client)
 
 **One code. Build anything. Run anywhere.**
 
-A lightweight, declarative and programmatic JavaScript runtime for building reactive, connected, collaborative, and offline-capable applications.
+Build interactive, connected, and offline-capable applications with declarative HTML and JavaScript.
 
-Create websites, dashboards, business applications, Progressive Web Apps, and cross-platform experiences using familiar HTML and JavaScript.
+CoCreateClient provides a dual API: developers can express application behavior through HTML attributes, programmatic JavaScript, or a combination of both.
 
-Use declarative HTML attributes, headless JavaScript APIs, or both.
+Create websites, dashboards, business applications, collaborative experiences, Progressive Web Apps, and cross-platform interfaces without being locked into a traditional frontend framework.
+
+**Build and interact.**
 
 **Package:** `@cocreate/client`
 
-### [CoCreateServer](https://github.com/CoCreateJS/CoCreate-server)
+### [CoCreateServer](https://github.com/CoCreateJS/Server)
 
 **One runtime. Any app. Every cloud.**
 
-A distributed JavaScript runtime for hosting applications, exposing APIs, managing data, coordinating services, and operating infrastructure across cloud environments.
+Run applications, APIs, databases, workflows, and distributed infrastructure through one extensible JavaScript runtime.
 
-Run standalone applications, extend existing systems, or build distributed platforms with integrated networking, storage, security, automation, and AI-accessible capabilities.
+CoCreateServer connects application services, storage systems, security, networking, workers, and cloud infrastructure through consistent programmatic interfaces.
+
+Deploy independently, extend existing applications, or coordinate distributed workloads across servers, regions, and providers.
+
+**Execute and operate.**
 
 **Package:** `@cocreate/server`
 
-CoCreateClient and CoCreateServer can operate independently or together.
+### CoCreateAI
 
-Through CoCreateDB, CoCreateAI, CoCreateMCP, structured workflows, and infrastructure services, the ecosystem extends beyond application development into the systems that run and manage applications.
+**One intelligence. Any role. Every task.**
 
-**One JavaScript ecosystem. From interface to infrastructure.**
+Connect intelligent agents to your applications, business data, APIs, workflows, and distributed infrastructure.
+
+CoCreateAI enables AI-powered experiences that go beyond conversation and code generation. Through authorized tools and runtime capabilities, agents can assist with customer relationships, communications, marketing, finance, software development, analytics, deployments, and infrastructure operations.
+
+From understanding an objective to planning, executing, verifying, and completing work, CoCreateAI brings intelligence into the entire application and business lifecycle.
+
+**Understand and orchestrate.**
+
+**Package:** `@cocreate/ai`
 
 ---
 
 ## Table of Contents
 
 - [Why CoCreateJS?](#why-cocreatejs)
-- [The CoCreateJS Ecosystem](#the-cocreatejs-ecosystem)
-- [AI-Native Applications and Infrastructure](#ai-native-applications-and-infrastructure)
+- [One Ecosystem, Three Pillars](#one-ecosystem-three-pillars)
 - [Quick Start](#quick-start)
-- [CoCreateClient](#cocreateclient)
-- [CoCreateServer](#cocreateserver)
-- [CoCreateDB](#cocreatedb)
-- [CoCreateAI](#cocreateai)
-- [CoCreateMCP](#cocreatemcp)
+- [CoCreateClient — Build and Interact](#cocreateclient--build-and-interact)
+- [CoCreateServer — Execute and Operate](#cocreateserver--execute-and-operate)
+- [CoCreateAI — Understand and Orchestrate](#cocreateai--understand-and-orchestrate)
+- [AI-Native Applications and Business Automation](#ai-native-applications-and-business-automation)
+- [CoCreateMCP — Connecting Intelligence to Capabilities](#cocreatemcp--connecting-intelligence-to-capabilities)
+- [Data and Storage — Freedom by Design](#data-and-storage--freedom-by-design)
+- [CoCreateDB — Native Data and Indexing](#cocreatedb--native-data-and-indexing)
 - [Security and Key Management](#security-and-key-management)
-- [Self-Contained Infrastructure](#self-contained-infrastructure)
-- [Unified APIs and Connectivity](#unified-apis-and-connectivity)
-- [Real-Time Collaboration and Offline Applications](#real-time-collaboration-and-offline-applications)
+- [Real-Time and Offline Applications](#real-time-and-offline-applications)
+- [Workflows and Structured Execution](#workflows-and-structured-execution)
 - [Distributed Infrastructure and Multi-Cloud](#distributed-infrastructure-and-multi-cloud)
-- [Application Definitions and AST Workflows](#application-definitions-and-ast-workflows)
-- [AI-Driven Development and Operations](#ai-driven-development-and-operations)
-- [Build Once, Run Across Devices](#build-once-run-across-devices)
 - [Modularity and Extensibility](#modularity-and-extensibility)
 - [Architecture](#architecture)
 - [Use Cases](#use-cases)
@@ -72,223 +91,88 @@ Through CoCreateDB, CoCreateAI, CoCreateMCP, structured workflows, and infrastru
 
 ## Why CoCreateJS?
 
-Modern application development often requires assembling and maintaining numerous independent technologies.
+Modern applications rarely operate in isolation.
 
-A typical application may depend on:
+Building and running an application may require a frontend framework, backend runtime, database, authentication system, real-time communication service, storage provider, deployment pipeline, infrastructure automation, monitoring tools, and numerous third-party APIs.
 
-- A frontend framework
-- A backend runtime
-- REST and WebSocket services
-- A database and caching layer
-- Authentication and authorization services
-- Secret and key management
-- File and object storage
-- Background jobs and workers
-- API integrations
-- Deployment pipelines
-- Load balancing and service discovery
-- Monitoring and autoscaling
-- Cloud infrastructure and DNS management
-- AI models, agents, and tool integrations
+Introducing AI often adds another layer of complexity.
 
-Each introduces dependencies, configuration, security considerations, and operational complexity.
+Developers connect models to isolated tools, build custom integrations for individual services, and maintain separate workflows for development, business operations, and infrastructure management.
+
+The result is a fragmented application environment.
 
 **CoCreateJS takes a different approach.**
 
-Instead of treating every application capability as a separate infrastructure problem, CoCreateJS provides a consistent set of JavaScript primitives, APIs, modules, and services that work together across client, server, data, AI, and infrastructure environments.
+Instead of treating every capability as a separate technology stack, CoCreateJS provides a unified JavaScript ecosystem where applications, data, services, workflows, AI agents, and infrastructure can interact through shared interfaces.
 
-The ecosystem is designed around several principles.
+### Build Without Unnecessary Complexity
 
-**Less boilerplate.** Common application behaviors can be expressed through declarative HTML, JavaScript APIs, and reusable modules.
+Use declarative HTML and JavaScript to create application interfaces and behavior.
 
-**Fewer dependencies.** Integrated services can reduce reliance on external infrastructure without preventing applications from using it.
+### Run Without Infrastructure Lock-In
 
-**One development model.** Shared concepts such as arrays, objects, keys, events, and structured operations carry across browser, server, and database environments.
+Deploy applications using an extensible server runtime that supports multiple cloud providers, storage systems, and distributed execution environments.
 
-**Real-time by design.** WebSockets, subscriptions, collaboration, and synchronization are foundational application capabilities.
+### Automate Beyond Individual Tools
 
-**Infrastructure independence.** Applications can operate across cloud providers, storage systems, and deployment environments.
+Connect intelligent agents to the applications, APIs, business data, and infrastructure already available through the runtime.
 
-**AI-native capabilities.** AI clients and agents can interact with exposed application and infrastructure tools through CoCreateMCP.
+### Adopt What You Need
 
-**Incremental adoption.** Use CoCreateClient, CoCreateServer, CoCreateDB, or individual modules independently.
+Use CoCreateClient, CoCreateServer, or CoCreateAI independently.
 
-**A complete application lifecycle.** Build, connect, secure, deploy, operate, scale, and evolve applications through a unified ecosystem.
+Integrate individual modules into existing applications without adopting the entire ecosystem.
 
-CoCreateJS is not intended to replace every technology developers already use.
+### Keep Your Options Open
 
-**It is designed to make fewer technologies mandatory.**
+Choose your frontend architecture, database provider, cloud infrastructure, and AI models.
+
+CoCreateJS provides integrated capabilities without making every integration mandatory.
+
+**Build applications, not infrastructure.**
 
 ---
 
-## The CoCreateJS Ecosystem
+## One Ecosystem, Three Pillars
 
-CoCreateJS is the overarching JavaScript project developed by **CoCreate**.
+CoCreateJS is organized around three complementary capabilities.
 
-Its components are designed to operate independently while sharing compatible APIs, conventions, and integration patterns.
+| Pillar | Responsibility | Focus |
+|---|---|---|
+| **CoCreateClient** | Build and interact | Interfaces, application behavior, connectivity, offline experiences |
+| **CoCreateServer** | Execute and operate | APIs, data, workflows, networking, distributed infrastructure |
+| **CoCreateAI** | Understand and orchestrate | Intelligent agents, business automation, development, operations |
+
+These pillars are supported by reusable technologies that extend their capabilities.
+
+### Supporting Technologies
 
 | Component | Purpose |
 |---|---|
-| **CoCreateClient** | Declarative interfaces, application behavior, reactivity, and offline capabilities |
-| **CoCreateServer** | Distributed runtime, application hosting, networking, and infrastructure coordination |
-| **CoCreateDB** | Storage-agnostic JavaScript database engine with first-class indexing |
-| **CoCreateAI** | Declarative AI interfaces, model connectivity, and agentic application experiences |
-| **CoCreateMCP** | AI-accessible tool interface for exposed server capabilities |
-| **CoCreateKMS** | Key and secret management for application and infrastructure security |
-| **CoCreateCluster** | Distributed execution, worker management, and mesh coordination |
-| **CoCreateDevice** | Cross-platform application packaging and device integration |
-| **CoCreateCLI** | Development, installation, deployment, and environment workflows |
-| **CoCreateAST** | Structured application logic, workflows, and automation |
-| **CoCreate Modules** | Reusable capabilities across the ecosystem |
+| **CoCreateDB** | Native document storage, indexing, querying, and synchronization |
+| **CoCreateMCP** | Model Context Protocol interface for authorized runtime capabilities |
+| **CoCreateAST** | Structured application logic and executable workflows |
+| **CoCreateKMS** | Cryptographic keys, credentials, and secret management |
+| **CoCreateCluster** | Worker coordination and distributed execution |
+| **CoCreateCLI** | Development, installation, and operational commands |
+| **CoCreateDevice** | Cross-platform application and device integration |
+| **CoCreate Modules** | Reusable application and infrastructure functionality |
 
-Components and integrations evolve independently. Availability and supported operations depend on the corresponding package, runtime version, and deployment configuration.
+These technologies are independently valuable, but they do not need to become separate entry points into the main CoCreateJS story.
 
-### Independent by Design
+For example, CoCreateServer supports numerous database adapters. Developers can use MongoDB, PostgreSQL, MySQL, SQLite, and other compatible storage systems without adopting CoCreateDB.
 
-Developers can use:
+Similarly, CoCreateAI can connect to existing business applications and external APIs without requiring those systems to be rebuilt.
 
-- CoCreateClient with an existing backend.
-- CoCreateServer with an existing frontend.
-- CoCreateDB independently of the complete runtime.
-- CoCreateAI inside custom application interfaces.
-- CoCreateMCP with compatible external AI clients.
-- Individual modules inside existing applications.
-- The complete ecosystem for integrated application and infrastructure development.
-
-**Adopt what you need. Extend what you want.**
-
----
-
-## AI-Native Applications and Infrastructure
-
-### Build with AI. Connect through MCP. Operate through One Runtime.
-
-CoCreateJS integrates artificial intelligence into the same architecture responsible for building, connecting, deploying, and operating applications.
-
-Through **CoCreateMCP**, compatible AI clients can discover and execute authorized CoCreateServer capabilities, connecting AI agents to application data, APIs, workflows, runtime configuration, and infrastructure operations.
-
-Through **CoCreateAI**, developers can build AI-powered application experiences declaratively, using the same HTML and JavaScript foundation that powers the rest of CoCreateJS.
-
-The result is an architecture where AI can do more than generate code.
-
-**AI can interact with the application and the infrastructure that runs it.**
-
-### One Runtime, Shared Capabilities
-
-CoCreateServer provides the operational foundation for application execution.
-
-It coordinates networking, routing, workers, storage, data operations, security, workflows, and distributed infrastructure.
-
-CoCreateMCP provides a standard interface through which authorized AI clients can discover and invoke exposed runtime capabilities.
-
-CoCreateAI provides the application-facing AI experience, including declarative chat interfaces and agentic workflows.
-
-CoCreateDB provides integrated data access and indexing, allowing authorized tools to query application data and inspect database structure.
-
-Together, these components establish a shared operational environment for developers, applications, and AI agents.
-
-```text
-                    CoCreateJS
-                         |
-          +--------------+--------------+
-          |                             |
-          v                             v
-    CoCreateClient                 CoCreateAI
-    Applications                   AI Interfaces
-    Declarative UI                 Agentic Workflows
-          |                             |
-          |                       AI Models
-          |                             |
-          +--------------+--------------+
-                         |
-                         v
-                    CoCreateMCP
-                         |
-              Discoverable Tools
-                         |
-                         v
-                   CoCreateServer
-                         |
-             Runtime & Authorization
-                         |
-       +-----------------+-----------------+
-       |                 |                 |
-       v                 v                 v
-   CoCreateDB        CoCreateAST       Infrastructure
-   Data & Indexes    Workflows         Cloud & Mesh
-       |                 |                 |
-       +-----------------+-----------------+
-                         |
-                         v
-                  Applications
-                  Data & Services
-                  Infrastructure
-```
-
-External MCP-compatible AI clients can also connect through CoCreateMCP without requiring CoCreateAI as their interface.
-
-### More Than Code Generation
-
-Traditional AI-assisted development often ends when source code has been generated.
-
-CoCreateJS extends the opportunity into the running application environment.
-
-Authorized AI agents can interact with capabilities such as:
-
-**Applications**
-
-- Create and modify application resources
-- Work with interfaces and components
-- Inspect application configuration
-- Execute application operations
-
-**Data**
-
-- Query CoCreateDB
-- Discover available arrays and keys
-- Inspect index definitions and metadata
-- Perform authorized data operations
-- Analyze query and storage behavior
-
-**Workflows**
-
-- Discover available AST workflows
-- Execute structured operations
-- Coordinate application and external APIs
-- Automate repeatable processes
-
-**Infrastructure**
-
-- Inspect runtime configuration
-- Work with deployment definitions
-- Execute authorized provisioning workflows
-- Monitor application and server state
-- Assist with scaling, diagnostics, and recovery
-
-The available capabilities are determined by the tools exposed through CoCreateMCP and the permissions granted to the requesting identity.
-
-### AI as a Native Participant
-
-CoCreateJS is designed so that application capabilities do not need to be implemented separately for developers, visual interfaces, and AI agents.
-
-The same underlying operations can be exposed through:
-
-- Declarative HTML
-- JavaScript APIs
-- Structured workflows
-- Application interfaces
-- MCP tools
-- AI-driven automation
-
-This creates a foundation for applications that are both programmable and agent-accessible.
-
-**Build the capability once. Make it available wherever it belongs.**
+**The pillars define how developers and users engage with CoCreateJS. The supporting technologies provide the capabilities behind them.**
 
 ---
 
 ## Quick Start
 
-CoCreateClient and CoCreateServer can be used independently.
+CoCreateJS supports incremental adoption.
+
+Start with a browser interface, a server runtime, or an AI-powered application experience.
 
 ### CoCreateClient
 
@@ -298,7 +182,7 @@ Include the browser runtime:
 <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
 ```
 
-Add application behavior directly to HTML:
+Use declarative HTML to connect interface elements to application data:
 
 ```html
 <input
@@ -310,13 +194,9 @@ Add application behavior directly to HTML:
 />
 ```
 
-The element is associated with an application object and key.
+The element identifies the array, object, and key associated with its value.
 
-Configured CoCreate modules can provide data binding, persistence, reactivity, and synchronization.
-
-No separate frontend framework is required.
-
-For developers who prefer JavaScript, the same ecosystem exposes programmatic APIs.
+Configured CoCreate modules can provide persistence, data binding, events, and synchronization.
 
 ### CoCreateServer
 
@@ -326,7 +206,7 @@ Install the server runtime:
 npm install @cocreate/server
 ```
 
-Initialize the runtime:
+Initialize it:
 
 ```javascript
 import server from '@cocreate/server';
@@ -334,7 +214,7 @@ import server from '@cocreate/server';
 await server.init();
 
 if (server.isPrimary) {
-  // Initialize primary-process capabilities.
+  // Primary-process responsibilities.
 }
 
 if (server.isWorker) {
@@ -350,11 +230,11 @@ if (server.isWorker) {
 }
 ```
 
-CoCreateServer provides an extensible environment for application routes, APIs, sockets, storage, and distributed coordination.
+CoCreateServer provides an extensible execution environment for application routes, APIs, workers, networking, storage, and distributed services.
 
-### Extend the Runtime
+### Extend with Modules
 
-Modules can be loaded according to the responsibilities of each process.
+Load capabilities according to the responsibilities of each process:
 
 ```javascript
 if (server.isPrimary) {
@@ -367,25 +247,31 @@ if (server.isWorker) {
 }
 ```
 
-Applications control which capabilities are loaded and where they execute.
+The runtime can be extended without requiring every module to be loaded in every process.
+
+### Connect AI
+
+CoCreateAI provides application-integrated AI experiences, while CoCreateMCP exposes authorized server capabilities to compatible AI clients.
+
+AI clients can use configured tools to interact with application data, execute workflows, and perform supported operations through CoCreateServer.
+
+See the CoCreateAI and CoCreateMCP sections for the architecture.
 
 ---
 
-## CoCreateClient
+## CoCreateClient — Build and Interact
 
 ### One code. Build anything. Run anywhere.
 
-CoCreateClient is a lightweight JavaScript runtime for building interactive, connected, and offline-capable applications.
+CoCreateClient is a JavaScript runtime for building interactive, reactive, collaborative, and offline-capable applications.
 
-It combines declarative HTML with headless JavaScript APIs, allowing developers to choose how application behavior is expressed.
+Its core philosophy is to make application behavior accessible through two complementary interfaces:
 
-The objective is simple:
+**Declarative HTML and programmatic JavaScript.**
 
-**Spend less time implementing repetitive functionality and more time creating the application experience.**
+### A Dual API
 
-### Declarative HTML
-
-CoCreateClient extends standard HTML through attributes that describe application behavior.
+Developers can define common application behavior directly through HTML attributes.
 
 ```html
 <form array="users" object>
@@ -398,13 +284,7 @@ CoCreateClient extends standard HTML through attributes that describe applicatio
 </form>
 ```
 
-Application behavior can be expressed without manually implementing every event listener, state update, network request, or serialization step.
-
-### Headless JavaScript
-
-The declarative layer is optional.
-
-Developers can use JavaScript directly for data operations, application events, sockets, and custom logic.
+Or use JavaScript to execute application operations:
 
 ```javascript
 crud.send({
@@ -417,661 +297,601 @@ crud.send({
 });
 ```
 
-The same underlying capabilities can be exposed through HTML attributes, JavaScript APIs, and reusable modules.
+Both approaches work with the same underlying application capabilities.
 
-### Client Capabilities
+Developers can use declarative attributes for common behaviors and JavaScript for custom logic.
+
+### Core Capabilities
 
 - Declarative HTML attributes
 - Headless JavaScript APIs
 - Reactive data binding
 - Application state management
 - CRUD operations
-- WebSocket connectivity
 - Real-time subscriptions
+- WebSocket communication
 - Collaborative editing
-- IndexedDB integration
-- Offline data handling
+- IndexedDB persistence
+- Offline data access
 - Service Worker integration
 - Progressive Web Apps
 - Component composition
-- Form management
-- File uploads
-- Lazy-loaded modules
+- Forms and validation
+- File handling
+- Modular functionality
 - Framework interoperability
-- Responsive and device-friendly applications
 
 ### Framework Agnostic
 
-CoCreateClient can operate independently or alongside other frontend technologies.
+CoCreateClient can operate independently or alongside existing frontend technologies.
 
-Applications can integrate with React, Vue, Angular, Svelte, Web Components, plain JavaScript, and custom rendering systems.
+Developers can integrate compatible capabilities with React, Vue, Angular, Svelte, Web Components, or plain JavaScript.
 
-Developers can adopt individual capabilities without replacing their existing frontend architecture.
+Using CoCreateClient does not require replacing an existing frontend architecture.
 
-### Lightweight by Design
+### Applications Across Devices
 
-CoCreateClient favors modular, lazy-loaded capabilities.
+CoCreateClient uses standard web technologies to support websites, dashboards, business applications, Progressive Web Apps, and cross-platform experiences.
 
-Earlier reference configurations targeted approximately 70 KB for the initial client runtime and approximately 410 KB for the complete loaded ecosystem.
+Related modules such as CoCreateDevice extend this direction through device-specific integration and packaging.
 
-These are reference measurements rather than universal bundle sizes. Actual sizes depend on the build, enabled modules, and compression method.
-
-**Repository:** [CoCreateClient](https://github.com/CoCreateJS/CoCreateJS)
+**Repository:** [CoCreateJS/Client](https://github.com/CoCreateJS/Client)
 
 **Package:** `@cocreate/client`
 
 ---
 
-## CoCreateServer
+## CoCreateServer — Execute and Operate
 
 ### One runtime. Any app. Every cloud.
 
-CoCreateServer is a distributed JavaScript runtime designed to run applications, expose services, coordinate infrastructure, and connect systems across environments.
+CoCreateServer is a distributed JavaScript runtime designed to execute applications and coordinate the services and infrastructure behind them.
 
-It can operate as an application server, extend an existing application, or provide the foundation for a distributed application platform.
+It provides a common operational environment for networking, APIs, storage, security, workflows, workers, and distributed execution.
 
-CoCreateServer does not require CoCreateClient.
+### One Runtime, Many Capabilities
 
-It can support applications built with other frontend and backend technologies through compatible networking and API interfaces.
-
-### One Runtime, Multiple Responsibilities
-
-CoCreateServer brings together capabilities traditionally distributed across multiple services:
+CoCreateServer brings together functionality commonly distributed across independent services:
 
 - HTTP and HTTPS
 - TLS certificate management
 - WebSockets
 - Application routing
-- API execution
-- Static file delivery
+- REST and custom APIs
+- Static asset delivery
 - Primary and worker processes
 - Inter-process communication
 - Cluster coordination
 - Distributed messaging
 - Data operations
-- Storage integrations
+- Database adapters
 - Authentication and authorization
 - Background jobs
-- Telemetry and health monitoring
-- Autoscaling and lifecycle management
-- Multi-cloud coordination
-- AI-accessible tools through CoCreateMCP
+- Scheduled workflows
+- Health monitoring
+- Infrastructure orchestration
+- Multi-cloud integration
+- AI-accessible operations through CoCreateMCP
 
-The runtime is modular, allowing capabilities to be loaded only where they are needed.
+The runtime is modular.
 
-### An AI-Accessible Runtime
+Applications load the capabilities they need rather than requiring every feature in every process.
 
-CoCreateServer is more than an execution environment for application code.
+### Independent or Integrated
 
-Its runtime object provides access to application and infrastructure capabilities through programmatic interfaces.
+CoCreateServer can power applications built with CoCreateClient, but it does not depend on CoCreateClient.
 
-CoCreateMCP makes selected capabilities accessible to compatible AI clients through structured tools.
-
-This allows authorized agents to interact with the running environment rather than relying exclusively on source-code generation or external automation scripts.
-
-An agent may be able to:
-
-- Inspect runtime state
-- Discover available operations
-- Query application data
-- Execute structured workflows
-- Manage configured services
-- Interact with infrastructure integrations
-
-Access must remain controlled through tool definitions, authorization, and operational safeguards.
+It can also serve existing frontend applications, backend services, APIs, and distributed workloads.
 
 ### Primary and Worker Architecture
 
-Each runtime node can manage its own primary process and workers.
+CoCreateServer distinguishes between local primary-process responsibilities and worker execution.
 
-The primary process coordinates local runtime responsibilities, while workers execute assigned application capabilities.
+A node may manage its own primary process and workers while participating in a broader distributed mesh.
 
-Nodes can communicate across a distributed mesh without depending on a permanent global primary.
+Distributed coordination does not require one permanent global primary for every node.
 
-### One Configuration Model
+### Data Without Lock-In
 
-CoCreateServer uses JavaScript, JSON, and structured application definitions to express runtime behavior.
+CoCreateServer provides a consistent interface to supported storage systems.
 
-Configuration can be targeted to individual clusters, servers, workers, organizations, or services.
+Applications can use external databases through adapters or choose CoCreateDB for integrated native storage.
 
-A unified configuration model does not require every node to share an identical configuration.
+The database engine is a deployment choice rather than a requirement for using the runtime.
 
-Each deployment can define its own responsibilities while participating in the broader ecosystem.
+### Infrastructure as an Application Capability
 
-### Run Any Application
+CoCreateServer is designed to coordinate operations such as:
 
-CoCreateServer supports several adoption patterns.
+- Provisioning servers
+- Configuring services
+- Deploying applications
+- Managing workers
+- Monitoring runtime health
+- Scaling workloads
+- Coordinating clusters
+- Managing storage
+- Executing recovery workflows
 
-**Build directly on the runtime.** Use its networking, routing, data, and orchestration capabilities as the application foundation.
+Supported operations depend on the installed modules, infrastructure integrations, and runtime configuration.
 
-**Extend an existing application.** Integrate CoCreate services with an established frontend or backend.
+### A Runtime Accessible to AI
 
-**Run distributed services.** Deploy coordinated nodes across regions and providers.
+Through CoCreateMCP, selected CoCreateServer capabilities can be exposed as tools for compatible AI clients.
 
-**Build an application platform.** Operate multiple applications, organizations, and environments.
+This allows AI agents to interact with the running application environment rather than being limited to generating source code or recommending terminal commands.
 
-**Enable agentic operations.** Expose authorized runtime capabilities to compatible AI clients through CoCreateMCP.
+An authorized agent may inspect application state, query data, execute workflows, or invoke infrastructure operations using the same underlying runtime capabilities available to application developers.
 
-**Repository:** [CoCreateServer](https://github.com/CoCreateJS/CoCreate-server)
+**Repository:** [CoCreateJS/Server](https://github.com/CoCreateJS/Server)
 
 **Package:** `@cocreate/server`
 
 ---
 
-## CoCreateDB
+## CoCreateAI — Understand and Orchestrate
 
-### Storage-Agnostic Data. First-Class Indexing.
+### One intelligence. Any role. Every task.
 
-CoCreateDB is a JavaScript database engine designed to make structured data accessible without requiring a traditional standalone database service for every deployment.
+CoCreateAI connects intelligent agents to the applications, business processes, data, APIs, workflows, and infrastructure available through CoCreateJS.
 
-Its architecture centers on an independently accessible indexing primitive and a storage-agnostic document model.
+It is designed to move beyond isolated AI conversations and task-specific assistants.
 
-Rather than requiring all data to live inside a single proprietary storage engine, CoCreateDB is designed to work with storage backends such as:
+**CoCreateAI brings intelligence into the operating environment of the application itself.**
 
-- Local filesystems
-- Attached storage volumes
-- Cloud object storage
-- S3-compatible storage
-- Distributed storage environments
+### Intelligence Across the Entire Business
 
-### Documents as Data
+CoCreateAI is not limited to software development or infrastructure management.
 
-CoCreateDB uses a document-oriented model.
+Through connected application capabilities, it can support roles and workflows across an organization.
 
-Collections can map to storage directories or equivalent namespaces, while documents are serialized as JSON.
+**Customer Relationships**
 
-The engine manages indexing, retrieval, updates, and data access above the storage layer.
+Work with customers, contacts, leads, organizations, and CRM records.
 
-### Indexing as a First-Class Primitive
+**Communications**
 
-Indexing is central to CoCreateDB's design.
+Review messages, draft responses, organize conversations, and coordinate email, SMS, and other communication workflows through configured integrations.
 
-Indexes are organized by database, array, and key, including nested keys expressed through dot notation.
+**Sales and Finance**
 
-The segmented index architecture is designed to:
+Work with invoices, payment records, transactions, reporting, and connected payment services.
 
-- Minimize unnecessary document reads
-- Support ordered lookups
-- Narrow query candidates efficiently
-- Support filtering and sorting
-- Scale index metadata incrementally
-- Operate across different storage backends
+**Marketing**
 
-Indexing primitives are intended to remain independently accessible rather than hidden inside the database engine.
+Research topics, prepare campaigns, create content, coordinate publishing workflows, and analyze results through supported integrations.
 
-### Data on Disk. Data Through the Runtime.
+**Development**
 
-CoCreateDB provides two complementary ways to work with application data.
+Assist with application interfaces, code, features, configuration, testing, debugging, and deployment workflows.
 
-**Persistent storage** keeps documents and indexes in configured filesystem or object-storage backends.
+**Data and Analytics**
 
-**Runtime access** exposes database operations and structural information through JavaScript APIs.
+Query application data, inspect records, analyze trends, and prepare reports.
 
-This separation is particularly useful for automation and AI.
+**Infrastructure**
 
-Authorized tools can query the database through CoCreateServer while also accessing supported metadata about indexes, storage organization, and data structures.
+Inspect telemetry, evaluate capacity, manage configured deployments, and assist with distributed infrastructure operations.
 
-The database can expose information such as:
+### From Conversation to Execution
 
-- Available databases
-- Arrays and objects
-- Indexed keys
-- Index metadata
-- Storage adapters
-- Data partitions
-- Query operations
-- Runtime storage state
+An AI assistant traditionally provides information, recommendations, or generated code.
 
-This provides the foundation for AI-assisted database exploration, query analysis, and operational diagnostics.
+CoCreateAI can connect those decisions to executable application capabilities.
 
-Direct filesystem inspection depends on the storage format, encryption configuration, and access permissions. Encrypted files are not assumed to be readable by CLI tools without authorized decryption.
+Consider a request:
 
-### Designed for Distributed Applications
+> Review today's customer messages, identify the most urgent conversations, draft responses, and let me approve them before sending.
 
-CoCreateDB's evolving architecture includes:
+A connected workflow could:
 
-- On-demand data access
-- Configurable caching
-- Document-oriented CRUD
-- Field-level patch operations
-- Index-driven query planning
-- Pub/sub-based synchronization
-- Replica bootstrap between nodes
-- Eventual consistency models
-- Integration with the CoCreateServer mesh
+1. Retrieve new messages from the application database.
+2. Identify the associated customers and relevant business records.
+3. Prioritize messages based on configured criteria.
+4. Generate suggested responses.
+5. Present the responses through an application interface.
+6. Wait for user approval.
+7. Send approved messages through configured communication APIs.
+8. Update conversation and customer records.
+9. Record the execution results.
 
-Distributed behaviors require appropriate conflict handling, persistence guarantees, and recovery strategies for each deployment.
+The AI can use the application's existing data and tools rather than relying on disconnected external systems.
 
-### Database Freedom
+### Business Automation
 
-CoCreateDB expands the ecosystem's ability to operate without an external database service.
+The same architecture can support scheduled and event-driven workflows.
 
-It does not remove support for existing databases.
+Examples include:
 
-CoCreateServer can continue to integrate with storage engines such as MongoDB, PostgreSQL, MySQL, SQLite, Firestore, and other supported providers.
+- Reviewing new leads every morning
+- Preparing customer follow-up messages
+- Generating invoice reminders
+- Summarizing daily sales
+- Researching marketing topics
+- Drafting social media campaigns
+- Scheduling approved communications
+- Monitoring incoming support requests
+- Updating application records
+- Producing operational reports
 
-Applications can choose between CoCreateDB, existing database systems, or a combination of storage services.
+CoCreateServer can coordinate scheduled execution through supported jobs and workflows.
 
-**The application API should not have to change simply because the storage backend changes.**
+The database can preserve business context and workflow state.
 
-**Repository:** [CoCreateDB](https://github.com/CoCreateJS/db)
+CoCreateAI provides reasoning and content generation.
 
-**Package:** `@cocreate/db`
+CoCreateMCP provides access to the authorized tools needed to execute operations.
 
----
+### Development and Infrastructure
 
-## CoCreateAI
+The same intelligence layer can participate in technical workflows.
 
-### Declarative AI. Connected Intelligence. Agentic Execution.
+For example:
 
-CoCreateAI brings artificial intelligence directly into the CoCreateJS application experience.
+> Review our traffic distribution, identify regions experiencing increased latency, and recommend whether we should expand an existing cluster or deploy additional nodes.
 
-Developers can create AI-powered interfaces using declarative HTML and existing CoCreateClient capabilities.
+A connected workflow could examine telemetry, compare available capacity, evaluate deployment options, and present a plan.
 
-This makes AI a natural extension of application development rather than a separate interface framework.
+With the appropriate permissions and tools, it could then execute approved provisioning and deployment operations, inspect the resulting infrastructure, and verify application health.
+
+The AI does not need to implement every infrastructure operation itself.
+
+It can use CoCreateServer's existing capabilities.
 
 ### Declarative AI Interfaces
 
-CoCreateAI supports building application-integrated chat experiences using familiar HTML and JavaScript.
+CoCreateAI includes application-integrated AI chat functionality built around CoCreateJS's declarative development model.
 
-These interfaces can incorporate application styling, components, controls, and structured interactions.
+Developers can create AI experiences that fit naturally into application interfaces, including dashboards, business tools, administrative systems, and application builders.
 
-Developers can create AI experiences that fit naturally within websites, dashboards, administrative systems, and application builders.
+### Model-Agnostic Connectivity
 
-### Model-Agnostic Architecture
+CoCreateAI is designed to work with configurable AI providers and compatible models.
 
-CoCreateAI is designed around configurable AI connectivity rather than a permanent dependency on one model provider.
+Its application capabilities and runtime tools are not intended to depend permanently on one AI provider.
 
-The architecture aims to support compatible AI models and services while maintaining consistent application-facing interfaces.
+### One Intelligence, Many Roles
 
-This allows the AI experience to evolve independently of the underlying model implementation.
+A single connected AI experience can assist with different responsibilities across the same application environment.
 
-### Agentic Application Experiences
+It can reason about business data, work with application interfaces, invoke APIs, coordinate workflows, and interact with distributed infrastructure.
 
-CoCreateAI can serve as an entry point for AI-driven application operations.
+These capabilities remain subject to the tools available, the permissions granted, and the operational controls configured by the application.
 
-Through connected tools and workflows, authorized agents can assist with:
-
-- Building application interfaces
-- Creating application resources
-- Working with data
-- Executing structured workflows
-- Connecting external services
-- Managing configured application operations
-- Initiating deployment and infrastructure workflows
-
-The long-term architecture uses CoCreateMCP as the common tool interface for CoCreateAI and external AI clients.
-
-This allows the application-facing AI experience to reuse capabilities already exposed by CoCreateServer.
-
-### AI Without a Separate Application Stack
-
-CoCreateAI follows the same development philosophy as the rest of CoCreateJS.
-
-Developers can build the interface declaratively, connect it to application capabilities, and extend behavior through JavaScript.
-
-**AI becomes another native application capability.**
+**One intelligence. Any role. Every task.**
 
 **Package:** `@cocreate/ai`
 
 ---
 
-## CoCreateMCP
+## AI-Native Applications and Business Automation
 
-### One Interface to Application and Infrastructure Capabilities.
+### From Intent to Outcome
 
-CoCreateMCP exposes CoCreateServer capabilities through the Model Context Protocol.
+CoCreateJS connects application development, business operations, and infrastructure through one runtime ecosystem.
 
-It enables compatible AI clients to discover available tools and invoke authorized operations.
-
-Because CoCreateServer already coordinates application services, data, workflows, and infrastructure, CoCreateMCP can provide access to those capabilities without requiring a separate integration for every AI provider.
-
-### Discoverable Tools
-
-CoCreateMCP provides a standardized way for AI clients to interact with exposed runtime operations.
-
-Depending on configuration and permissions, these tools may provide access to:
-
-- Application APIs
-- Data operations
-- CoCreateDB queries
-- Database metadata
-- AST workflows
-- Runtime configuration
-- Server operations
-- External service integrations
-- Deployment workflows
-- Infrastructure management
-
-### External and Internal AI
-
-CoCreateMCP supports two complementary integration patterns.
-
-**External AI clients** connect to exposed MCP tools and interact with authorized CoCreateServer capabilities.
-
-**CoCreateAI** can use the same tool interface to execute agentic workflows within CoCreateJS applications.
-
-This shared approach separates the AI model from the tools it can use.
-
-Applications can change AI providers without needing to reimplement every underlying server operation.
-
-### The Server as a Capability Platform
-
-CoCreateServer provides the underlying application and infrastructure functionality.
-
-CoCreateMCP exposes selected functionality through structured tool definitions.
-
-AI clients discover and invoke those tools according to their permissions.
+CoCreateAI extends that environment by allowing intelligent agents to work with the same capabilities used by applications and developers.
 
 ```text
-AI Client
-    |
-    v
-CoCreateMCP
-    |
-    v
-Tool Discovery & Authorization
-    |
-    v
-CoCreateServer
-    |
-    +-- Application APIs
-    |
-    +-- CoCreateDB
-    |
-    +-- CoCreateAST
-    |
-    +-- Runtime Configuration
-    |
-    +-- Infrastructure Services
+                     User or Team
+                          |
+                          v
+                      CoCreateAI
+                          |
+                 Understand Objective
+                          |
+                          v
+                    Plan Workflow
+                          |
+                          v
+                     CoCreateMCP
+                          |
+                 Authorized Tools
+                          |
+                          v
+                    CoCreateServer
+                          |
+        +-----------------+-----------------+
+        |                 |                 |
+        v                 v                 v
+    Business Apps      Data & APIs       Infrastructure
+        |                 |                 |
+    CRM / Invoices     CRUD / Storage    Cloud / Clusters
+    Contacts           External APIs     Workers / Deploy
+    Communications     Analytics         Monitoring
+        |                 |                 |
+        +-----------------+-----------------+
+                          |
+                          v
+                   Execute Workflow
+                          |
+                          v
+                  Verify and Record
+                          |
+                          v
+                       Outcome
 ```
 
-CoCreateMCP is not intended to provide unrestricted access to every server method or internal object.
+### A Connected Application Environment
 
-Sensitive operations should be exposed through controlled capabilities with authentication, authorization, validation, auditing, and appropriate approval requirements.
+The value of CoCreateAI comes from the capabilities available through CoCreateServer.
 
-### Build Once. Expose as a Tool.
+Applications may already contain:
 
-When application capabilities are structured and reusable, they can be made accessible through multiple interfaces.
+- Customers
+- Contacts
+- Organizations
+- Products
+- Invoices
+- Payments
+- Messages
+- Files
+- Events
+- Scheduled jobs
+- Application configurations
+- API integrations
+- Infrastructure definitions
 
-A capability may be invoked by:
+This information can be stored in CoCreateDB or in supported external databases.
 
-- A declarative HTML action
-- A JavaScript function
-- An application API
-- An AST workflow
-- An MCP-compatible AI client
+AI agents can work with that information through authorized application interfaces and tools.
 
-**One capability. Multiple ways to interact with it.**
+### One Runtime, Multiple Workflows
+
+An organization might use the same CoCreateJS environment to:
+
+- Build its website
+- Operate its CRM
+- Manage customer communications
+- Process payments
+- Run marketing campaigns
+- Analyze business performance
+- Deploy new application features
+- Scale infrastructure
+- Execute scheduled automation
+
+CoCreateAI can provide an intelligent interface across those capabilities.
+
+Instead of requiring a different disconnected AI integration for every department, compatible tools can expose application operations through a shared architecture.
+
+### Human Oversight Where It Matters
+
+AI automation does not require removing human control.
+
+Applications can define workflows where agents prepare recommendations, generate drafts, or propose operations before execution.
+
+Examples include:
+
+- Approving outbound customer messages
+- Reviewing marketing campaigns
+- Confirming payment-related operations
+- Approving infrastructure changes
+- Reviewing generated code
+- Validating deployment plans
+
+The appropriate approval requirements depend on the action, its risk, and the organization's policies.
+
+### Durable Automation
+
+Scheduled jobs and structured workflows create opportunities for automation that continues beyond a single chat session.
+
+An application can store workflow definitions, execution state, results, and business context.
+
+CoCreateServer can coordinate supported scheduled operations, while AI participates when reasoning or content generation is required.
+
+Reliable long-running automation also requires appropriate retry handling, authorization, idempotency, observability, and recovery mechanisms.
+
+---
+
+## CoCreateMCP — Connecting Intelligence to Capabilities
+
+CoCreateMCP provides a Model Context Protocol interface to authorized CoCreateServer capabilities.
+
+It allows compatible AI clients to discover available tools and execute supported operations.
+
+### One Tool Interface
+
+CoCreateServer already exposes application functionality through JavaScript APIs and modules.
+
+CoCreateMCP provides a standardized way to make selected capabilities accessible to AI clients.
+
+These capabilities may include:
+
+- Application APIs
+- CRUD operations
+- Database queries
+- Customer and contact management
+- Business workflows
+- File operations
+- Runtime configuration
+- Scheduled jobs
+- Infrastructure operations
+- Deployment workflows
+
+### External AI Clients
+
+Compatible external AI clients can connect to CoCreateMCP and interact with the capabilities exposed by CoCreateServer.
+
+This allows developers and organizations to use AI tools they already prefer.
+
+### CoCreateAI Integration
+
+CoCreateAI can use the same MCP-based capability model to interact with application and server operations.
+
+A shared tool interface allows AI models and application capabilities to evolve independently.
+
+### Authorization by Design
+
+MCP access should be controlled through explicit tool definitions and application permissions.
+
+Sensitive capabilities require appropriate authentication, authorization, validation, auditing, and execution safeguards.
+
+An AI client should not receive unrestricted access to every internal server method merely because it can connect to CoCreateMCP.
+
+**CoCreateMCP connects intelligence to capabilities. CoCreateServer executes those capabilities.**
+
+---
+
+## Data and Storage — Freedom by Design
+
+CoCreateJS treats data access as a core application capability without requiring one specific database engine.
+
+CoCreateServer supports a broad collection of storage adapters, including integrations for relational, document, embedded, cloud-hosted, and other database systems.
+
+Supported technologies and compatibility layers include database families such as:
+
+- MongoDB
+- PostgreSQL
+- MySQL
+- SQLite
+- MariaDB
+- CockroachDB
+- Amazon DynamoDB
+- Google Firestore
+- Microsoft Azure Cosmos DB
+- Other supported storage providers
+
+Some integrations use compatible drivers or adapter layers rather than independent implementations.
+
+### A Consistent Data Model
+
+CoCreateJS uses shared concepts such as:
+
+- `array`
+- `object`
+- `key`
+- `filter`
+- `sort`
+- `limit`
+
+These concepts allow applications to work with data through consistent APIs while adapters translate operations for their respective storage systems.
+
+### One Application, Multiple Storage Options
+
+Applications can select storage according to their requirements.
+
+A deployment might use MongoDB for application documents, PostgreSQL for relational workloads, SQLite for embedded persistence, or CoCreateDB for native document storage.
+
+CoCreateJS aims to reduce the amount of application code that must change when storage choices evolve.
+
+Adapter compatibility and supported query semantics can differ between engines.
+
+### AI and Data
+
+Because data operations are exposed through the runtime, authorized AI tools can work with application information without requiring a separate custom integration for every database provider.
+
+The AI interacts with supported application and database capabilities through CoCreateServer.
+
+**Database freedom remains a core architectural principle.**
+
+---
+
+## CoCreateDB — Native Data and Indexing
+
+CoCreateDB is a storage-agnostic JavaScript database engine built around first-class indexing.
+
+It provides a native persistence option for CoCreateJS applications while remaining an independently useful database project.
+
+### Documents and Storage
+
+CoCreateDB is designed to persist JSON documents using configurable storage backends, including local filesystems and cloud object storage.
+
+Collections can be represented through storage directories or equivalent namespaces.
+
+### First-Class Indexing
+
+Its indexing architecture organizes data by database, array, and key.
+
+Indexes are segmented and maintain metadata that can support efficient lookup, filtering, and ordering.
+
+The architecture emphasizes minimizing unnecessary document reads and making indexing primitives independently accessible.
+
+### Runtime Integration
+
+CoCreateDB integrates with CoCreateServer, allowing application operations and authorized tools to interact with data through the runtime.
+
+This also creates opportunities for AI-assisted database exploration, index inspection, and query analysis.
+
+### Distributed Data
+
+CoCreateDB's architecture includes work toward distributed synchronization, on-demand caching, patch-based updates, and replica coordination.
+
+The supported consistency and recovery guarantees depend on the implementation and deployment configuration.
+
+### Optional by Design
+
+CoCreateDB is not required to use CoCreateServer.
+
+Developers can choose native storage or continue using their preferred supported database provider.
+
+**Repository:** [CoCreateJS/db](https://github.com/CoCreateJS/db)
+
+**Package:** `@cocreate/db`
 
 ---
 
 ## Security and Key Management
 
-Security is a foundational part of the CoCreateJS architecture.
+CoCreateJS is designed to integrate security throughout the application lifecycle.
 
-The ecosystem is designed to coordinate application identity, permissions, credentials, and infrastructure access through reusable security capabilities.
+Security capabilities include authentication, authorization, permissions, encryption-related services, and credential management.
 
-### Authentication and Authorization
+### Application Security
 
-CoCreate modules support application patterns including:
+Supported application patterns include:
 
 - User authentication
 - Organization and tenant isolation
-- Role-based access control
-- Object-level permissions
-- Field-level permissions
+- Role-based permissions
+- Object-level access control
+- Field-level access control
 - API authorization
-- Workflow authorization
-- Secure communication over TLS
+- Secure network communication
 
 ### CoCreateKMS
 
-CoCreateKMS is the ecosystem's key-management component, intended to centralize cryptographic key and secret-management responsibilities.
+CoCreateKMS provides the architectural foundation for key and secret management.
 
-Its architectural role includes supporting:
+Its responsibilities include managing access to cryptographic material, service credentials, and sensitive configuration according to the implementation and deployment environment.
 
-- Application secrets
-- Encryption key management
-- Key lifecycle and rotation
-- Service credentials
-- Infrastructure credentials
-- Controlled access to sensitive configuration
-- Integration with authentication and authorization workflows
+### AI and Operational Security
 
-The exact security guarantees depend on the KMS implementation, configured key protection, access policies, and deployment environment.
+AI-accessible tools introduce additional security requirements.
 
-Centralizing key management simplifies integration but does not eliminate the need for secure key storage, auditing, recovery, and operational controls.
+Applications should control:
 
-### Security for AI-Accessible Infrastructure
+- Which tools an agent can discover
+- Which operations it can execute
+- Which data it can access
+- Which credentials are available
+- Which actions require approval
+- How execution is recorded
+- How failures and unauthorized requests are handled
 
-When AI agents can interact with application and infrastructure capabilities, authorization becomes especially important.
-
-CoCreateMCP should expose operations through defined tools rather than unrestricted runtime access.
-
-Sensitive operations may require:
-
-- Authenticated identities
-- Scoped permissions
-- Tool-level authorization
-- Input validation
-- Execution limits
-- Audit logging
-- Human approval for consequential actions
-- Restricted access to secrets and credentials
-
-The objective is to make infrastructure accessible to authorized automation without removing operational control.
-
-### Security Across the Lifecycle
-
-```text
-Application Identity
-        |
-        v
-Authentication & Permissions
-        |
-        v
-Key & Secret Management
-        |
-        v
-Authorized APIs & MCP Tools
-        |
-        v
-Structured Workflows
-        |
-        v
-Protected Data & Infrastructure
-```
-
-Security is not an optional layer added after deployment.
-
-It is part of how applications, agents, services, data, and infrastructure interact.
+The objective is to enable useful automation without granting unnecessary privileges.
 
 ---
 
-## Self-Contained Infrastructure
+## Real-Time and Offline Applications
 
-### From Application to Infrastructure
-
-One of the central architectural goals of CoCreateJS is to reduce dependence on separately operated infrastructure services.
-
-A complete application environment may require:
-
-- A runtime
-- A database
-- Key management
-- Networking
-- TLS
-- Authentication
-- Storage
-- Background execution
-- Monitoring
-- Deployment automation
-- Scaling
-- Recovery
-- AI-accessible operations
-
-CoCreateJS is evolving toward an integrated model in which these responsibilities can be coordinated within the ecosystem.
-
-### A Closed Infrastructure Lifecycle
-
-The intended lifecycle connects the stages of application operation:
-
-```text
-Define Application
-        |
-        v
-Build & Configure
-        |
-        v
-Provision Infrastructure
-        |
-        v
-Deploy Runtime
-        |
-        v
-Initialize Storage & Security
-        |
-        v
-Connect Services & AI Tools
-        |
-        v
-Monitor & Scale
-        |
-        v
-Recover, Update & Optimize
-        |
-        +------> Continuous Lifecycle
-```
-
-This model aims to make infrastructure reproducible, replaceable, and manageable through application-level workflows.
-
-### AI Across the Lifecycle
-
-Because CoCreateServer provides operational capabilities and CoCreateMCP can expose them as tools, authorized AI agents can participate in different stages of the lifecycle.
-
-An agent might help configure an application, inspect its data, execute a deployment workflow, diagnose runtime behavior, or recommend infrastructure changes.
-
-The same underlying services remain available to developers and conventional application automation.
-
-AI is an additional interface to the system, not a replacement for its underlying capabilities.
-
-### Self-Contained Does Not Mean Isolated
-
-Applications can still connect to:
-
-- External databases
-- Third-party APIs
-- Cloud services
-- Existing authentication providers
-- External key-management services
-- Object storage
-- Content delivery networks
-- AI providers
-- Custom infrastructure
-
-The distinction is that CoCreateJS aims to make many common dependencies optional rather than mandatory.
-
-**Own the application lifecycle without giving up integration freedom.**
-
----
-
-## Unified APIs and Connectivity
-
-### Connect Anything
-
-CoCreateJS uses a consistent set of concepts to connect applications, data, services, AI agents, and infrastructure.
-
-Its APIs are designed around familiar JavaScript structures and operations.
-
-### A Shared Vocabulary
-
-Common concepts include:
-
-- `array` — a collection or group of objects
-- `object` — a structured record or application entity
-- `key` — an object property, including nested dot-notation paths
-- `filter` — criteria for selecting and organizing data
-- `on` — event or subscription handling
-- `emit` — event or operation dispatch
-
-These concepts can appear across client interfaces, server modules, database engines, and structured workflows.
-
-### Unified Object Operations
-
-```javascript
-crud.send({
-  method: 'object.read',
-  array: 'users',
-  filter: {
-    query: {
-      active: true
-    },
-    sort: {
-      created: -1
-    },
-    limit: 25
-  }
-});
-```
-
-The same object-oriented operation model can be routed through supported modules and storage adapters.
-
-### Multiple Communication Paths
-
-CoCreateJS supports architectures using:
-
-- HTTP and HTTPS
-- WebSockets
-- JavaScript events
-- Inter-process communication
-- Server-to-server messaging
-- Distributed mesh communication
-- REST APIs
-- GraphQL integrations
-- Model Context Protocol
-- Provider-specific APIs
-- Custom protocols
-
-The goal is not to force every connection through one transport.
-
-It is to make application capabilities accessible through consistent interfaces while preserving the requirements of each protocol.
-
-### Connect Existing Systems
-
-CoCreateJS is designed to integrate with existing infrastructure and applications.
-
-Adopting CoCreateServer does not require replacing an existing frontend.
-
-Adopting CoCreateClient does not require replacing an existing backend.
-
-Using CoCreateDB does not require abandoning other supported storage engines.
-
-Connecting an AI client does not require rebuilding the application around that model.
-
-**Integration is a capability, not a migration requirement.**
-
----
-
-## Real-Time Collaboration and Offline Applications
-
-CoCreateJS combines client-side persistence, real-time communication, and server-side data operations to support connected applications that can continue functioning through intermittent connectivity.
+CoCreateJS combines browser-side persistence, real-time networking, and server-side data operations.
 
 ### Real-Time Capabilities
 
-Applications can use configured modules for:
+Applications can use supported modules for:
 
-- Live data binding
-- Real-time subscriptions
+- WebSocket communication
+- Data subscriptions
+- Live updates
 - Collaborative editing
 - Shared application state
-- Event broadcasting
-- Presence and messaging
-- Distributed synchronization
+- Messaging
+- Presence
+- Distributed events
 
-### Offline-First Development
+### Offline Capabilities
 
-CoCreateClient can use browser capabilities such as IndexedDB and Service Workers to support offline workflows.
+CoCreateClient can use IndexedDB and Service Workers to support local data access and offline application behavior.
 
 ```text
 Application Interface
@@ -1080,152 +900,49 @@ Application Interface
 CoCreateClient
         |
         v
-Local IndexedDB
+Local Storage / IndexedDB
         |
         v
-Synchronization Layer
+Synchronization
         |
         v
 CoCreateServer
         |
         v
-CoCreateDB / Storage Adapters
+Configured Database
 ```
 
-Applications can read and update locally available data and synchronize changes when connectivity returns.
-
-Conflict resolution and consistency guarantees depend on the configured synchronization strategy.
+Synchronization strategies and conflict handling depend on the application and configured modules.
 
 ### Progressive Web Apps
 
-CoCreateClient supports Progressive Web Application development through standard web technologies and compatible modules.
-
-Applications can combine:
-
-- Offline resources
-- Installable web experiences
-- Local persistence
-- Background synchronization patterns
-- Responsive interfaces
-- Real-time updates when connected
+CoCreateClient supports applications built with standard web technologies that can be enhanced with offline resources, local persistence, and installable experiences.
 
 ---
 
-## Distributed Infrastructure and Multi-Cloud
+## Workflows and Structured Execution
 
-### Every Cloud
+CoCreateJS uses structured operations to coordinate application behavior.
 
-CoCreateServer is designed to operate across multiple infrastructure providers and deployment environments.
+CoCreateAST provides a foundation for expressing executable logic and workflows as data.
 
-Potential targets include:
+### Applications as Structured Systems
 
-- Amazon Web Services
-- Google Cloud
-- Microsoft Azure
-- Oracle Cloud Infrastructure
-- DigitalOcean
-- Other supported cloud providers
-- Bare-metal servers
-- Self-managed infrastructure
-- Edge environments
+Application definitions can include:
 
-Provider support and automated provisioning capabilities depend on configured integrations.
-
-### Distributed Runtime Nodes
-
-Each node can provide application and networking capabilities while participating in a larger cluster or mesh.
-
-```text
-                  Global Routing
-                        |
-           +------------+------------+
-           |            |            |
-           v            v            v
-       Region A      Region B      Region C
-           |            |            |
-      CoCreateServer CoCreateServer CoCreateServer
-           |            |            |
-        Workers        Workers      Workers
-           |            |            |
-           +------------+------------+
-                        |
-                Distributed Mesh
-                        |
-              Shared Data & State
-```
-
-Nodes can coordinate routing, messaging, health, and application workloads according to deployment configuration.
-
-### Autoscaling and Recovery
-
-The runtime architecture supports workflows for:
-
-- Node provisioning
-- Worker allocation
-- Health monitoring
-- Horizontal scaling
-- Vertical scaling
-- Geographic placement
-- Node draining
-- Workload migration
-- Replacement of unhealthy nodes
-- Scale-to-zero strategies
-- Rejoining and synchronization
-
-The goal is to make application infrastructure responsive to actual demand.
-
-### Geographic Routing
-
-CoCreateJS's infrastructure roadmap includes geographically aware routing through DNS and edge-provider integrations.
-
-Applications can use location and latency information to select appropriate runtime regions, with the goal of bringing application execution and data closer to users.
-
-### No Permanent Global Primary
-
-Individual runtime nodes can manage local primary and worker processes.
-
-Distributed coordination does not require treating one permanent global server as the owner of every application operation.
-
-This architecture supports independently operating nodes that participate in shared services and configured synchronization mechanisms.
-
-### AI-Assisted Infrastructure Operations
-
-CoCreateMCP creates a standardized way for authorized AI agents to interact with exposed infrastructure tools.
-
-Agents can assist with inspecting configuration, initiating workflows, diagnosing failures, and coordinating operational tasks.
-
-The runtime remains responsible for executing operations and enforcing configured permissions.
-
----
-
-## Application Definitions and AST Workflows
-
-CoCreateJS is designed to represent more than application data.
-
-Application behavior, configuration, and workflows can also be expressed as structured information.
-
-### Applications as Data
-
-Application definitions may include:
-
-- HTML
-- CSS
-- JavaScript
+- Interfaces
 - Components
-- Configuration
-- Permissions
 - Data models
-- API definitions
-- AST workflows
+- Permissions
+- Events
+- API operations
+- Workflows
+- Runtime configuration
 - Infrastructure definitions
 
-This allows compatible application behavior to be stored, inspected, versioned, synchronized, and executed through reusable mechanisms.
+### Workflow Execution
 
-### Structured Execution
-
-CoCreateAST provides a model for expressing operations and workflows as structured data.
-
-A workflow may coordinate:
+A workflow may coordinate multiple operations:
 
 ```text
 Receive Event
@@ -1243,178 +960,116 @@ Evaluate Conditions
 Execute Operations
       |
       v
-Call External Services
-      |
-      v
 Update State
       |
       v
 Emit Results
 ```
 
-Structured execution creates opportunities for:
+### Workflows and AI
 
-- Reusable workflows
-- Declarative automation
-- Permission-controlled operations
-- Visual workflow builders
-- AI-assisted application behavior
-- Auditable execution paths
+Structured workflows are particularly valuable for AI integration.
 
-AST execution must enforce appropriate validation, authorization, and resource limits.
+An agent can invoke an authorized workflow rather than attempting to execute arbitrary code.
 
-### Workflows as AI Tools
+The workflow can provide defined inputs, controlled operations, and structured results.
 
-Structured workflows are particularly useful for AI integration.
+This allows application automation and AI-driven execution to share underlying capabilities.
 
-Instead of giving an agent unrestricted access to arbitrary code execution, applications can expose defined operations through CoCreateMCP.
+### Scheduled Automation
 
-An agent can discover a tool, provide structured inputs, and receive results from the workflow.
+CoCreateServer can coordinate supported cron jobs, scheduled tasks, and event-driven workflows.
 
-This approach connects AI-driven automation to the same operations used by the application itself.
+Combined with application data and AI tools, these capabilities provide a foundation for recurring business and operational automation.
 
 ---
 
-## AI-Driven Development and Operations
+## Distributed Infrastructure and Multi-Cloud
 
-### From Intent to Execution
+CoCreateServer is designed for distributed execution across multiple infrastructure environments.
 
-CoCreateJS is designed to make application capabilities accessible to developers, applications, and authorized AI-driven workflows.
+Supported and targeted environments include public cloud providers, self-managed servers, and compatible edge infrastructure.
 
-Rather than treating AI as a separate chatbot disconnected from application infrastructure, the ecosystem exposes structured operations that compatible AI tools can invoke.
+### Distributed Runtime
 
 ```text
-Developer / User / AI
-          |
-          v
-Structured Request
-          |
-          v
-Authentication & Authorization
-          |
-          v
-CoCreateMCP / Application API
-          |
-          v
-CoCreateAST / Workflow
-          |
-          v
-CoCreateServer
-          |
-          +-- CoCreateDB
-          |
-          +-- Application Services
-          |
-          +-- Infrastructure
-          |
-          v
-Result & State Update
+                    Global Routing
+                          |
+           +--------------+--------------+
+           |              |              |
+           v              v              v
+        Region A        Region B        Region C
+           |              |              |
+      CoCreateServer CoCreateServer CoCreateServer
+           |              |              |
+        Workers         Workers         Workers
+           |              |              |
+           +--------------+--------------+
+                          |
+                    Runtime Mesh
+                          |
+                   Data & Services
 ```
 
-### AI Across the Application Lifecycle
+### Infrastructure Capabilities
 
-CoCreateJS aims to support AI-assisted workflows throughout development and operation.
+The architecture supports workflows for:
 
-**Build**
+- Server provisioning
+- Worker management
+- Cluster coordination
+- Application deployment
+- Health monitoring
+- Workload distribution
+- Geographic placement
+- Autoscaling
+- Recovery
+- Service configuration
 
-Generate interfaces, components, application logic, and structured workflows.
+Availability depends on the installed modules and provider integrations.
 
-**Connect**
+### AI-Assisted Operations
 
-Integrate APIs, services, AI providers, and data sources.
+CoCreateAI can interact with exposed runtime tools to help analyze infrastructure and coordinate authorized operations.
 
-**Configure**
+For example, an agent could compare traffic density, regional latency, and existing server capacity before proposing a deployment.
 
-Manage application settings, environments, and authorized infrastructure definitions.
+With suitable tools and permissions, it could execute an approved workflow and inspect the resulting deployment.
 
-**Deploy**
+### One Runtime Across Environments
 
-Execute deployment and provisioning workflows.
+CoCreateServer aims to provide consistent application behavior across compatible infrastructure environments.
 
-**Operate**
-
-Inspect runtime state, application data, and system health.
-
-**Optimize**
-
-Analyze queries, indexes, workloads, and infrastructure utilization.
-
-**Maintain**
-
-Assist with diagnostics, updates, and recovery procedures.
-
-### Human and AI Workflows
-
-The same application primitives can support:
-
-- Manual development
-- Declarative interfaces
-- Visual builders
-- Programmatic automation
-- AI-assisted creation
-- Agentic workflows
-
-Developers retain control over application logic, permissions, and infrastructure policies.
-
-**AI does not replace the runtime. It uses the runtime.**
-
----
-
-## Build Once, Run Across Devices
-
-CoCreateJS aims to make application development portable across web, mobile, desktop, and other environments.
-
-The shared JavaScript foundation helps developers reuse application logic, interfaces, data operations, and integrations.
-
-### CoCreateDevice
-
-CoCreateDevice extends this direction through device-specific packaging and integration.
-
-The ecosystem targets environments including:
-
-- Web browsers
-- Progressive Web Apps
-- Android
-- iOS
-- Windows
-- Additional desktop and device platforms
-
-Platform-specific capabilities and packaging may require corresponding tooling, wrappers, and configuration.
-
-The objective is not necessarily to produce one identical binary for every platform.
-
-It is to maximize reuse of application code and behavior while allowing the deployment output to match its target environment.
+Developers can use one runtime model while choosing where and how workloads execute.
 
 ---
 
 ## Modularity and Extensibility
 
-CoCreateJS is designed as a composable ecosystem.
+CoCreateJS is a modular ecosystem.
 
-Applications can use the complete project or select individual capabilities.
+Applications can use individual components without adopting the complete platform.
 
 ### Reusable Modules
 
-Modules can provide functionality such as:
+Modules provide functionality for:
 
-- CRUD
-- Sockets
+- Data operations
 - Authentication
 - Organizations
 - Permissions
 - Notifications
 - File handling
-- Data synchronization
+- Messaging
+- Integrations
 - Background jobs
-- API integrations
-- AI integrations
-- MCP tools
-- Application workflows
+- Workflows
+- AI
 - Infrastructure operations
 
-### Load Only What You Need
+### Dynamic Loading
 
-Modules can be imported dynamically:
+Modules can be imported when needed:
 
 ```javascript
 await import('@cocreate/users');
@@ -1422,11 +1077,9 @@ await import('@cocreate/organizations');
 await import('@cocreate/notification');
 ```
 
-Runtime responsibilities can be separated across primary processes, workers, and deployment environments.
+### Extensible Runtime
 
-### Extend Existing Capabilities
-
-CoCreateServer exposes extensible runtime interfaces.
+CoCreateServer allows developers to add custom routes, operations, services, and integrations.
 
 ```javascript
 server.routes.set('/api/custom', async (req, res) => {
@@ -1440,143 +1093,156 @@ server.routes.set('/api/custom', async (req, res) => {
 });
 ```
 
-Applications can provide custom implementations for compatible runtime services.
+### Extensible AI Tools
 
-### Extend AI Capabilities
+Application capabilities can be exposed through structured MCP tools where supported.
 
-CoCreateMCP allows supported server operations to be exposed as tools for compatible AI clients.
+This allows developers to extend the AI-accessible functionality of an application without duplicating its underlying business logic.
 
-This enables developers to extend the AI-accessible surface of an application without building a separate AI-specific implementation of every operation.
-
-The goal is to expose useful primitives without requiring unnecessary wrapper layers.
+**Build the capability once. Expose it through the interfaces that need it.**
 
 ---
 
 ## Architecture
 
-CoCreateJS combines independent runtimes, shared APIs, modular services, AI-accessible tools, and distributed infrastructure.
+### Three Pillars. One Connected Ecosystem.
 
 ```text
-                         CoCreateJS
-                             |
-          +------------------+------------------+
-          |                                     |
-          v                                     v
-    CoCreateClient                        CoCreateServer
-          |                                     |
-    Declarative HTML                       HTTP / HTTPS
-    JavaScript APIs                        WebSockets
-    Reactive Interfaces                    APIs & Routing
-    IndexedDB                              Primary / Workers
-    Offline / PWA                          Distributed Mesh
-          |                                     |
-          +------------------+------------------+
-                             |
-                             v
-                   Shared Application APIs
-                             |
-          +------------------+------------------+
-          |                                     |
-          v                                     v
-     CoCreateAI                           CoCreateMCP
-          |                                     |
-    Declarative Chat                      Tool Discovery
-    AI Connectivity                       Tool Execution
-    Agentic Workflows                     AI Client Access
-          |                                     |
-          +------------------+------------------+
-                             |
-                             v
-                    CoCreateServer APIs
-                             |
-          +------------------+------------------+
-          |                  |                  |
-          v                  v                  v
-      CoCreateDB        CoCreateAST        CoCreateKMS
-          |                  |                  |
-      Indexing           Workflows          Keys / Secrets
-      Documents          Automation         Credentials
-      Storage            Execution          Security
-          |                  |                  |
-          +------------------+------------------+
-                             |
-                             v
-                   CoCreate Infrastructure
-                             |
-                    Cluster / Deployment
-                             |
-                    Cloud / Edge / Devices
+                           CoCreateJS
+                               |
+             +-----------------+-----------------+
+             |                 |                 |
+             v                 v                 v
+       CoCreateClient    CoCreateServer      CoCreateAI
+             |                 |                 |
+        Build & UI        Execute & Run     Understand & Act
+             |                 |                 |
+        Declarative       APIs / Routing     AI Models
+        JavaScript        Networking         Agentic Workflows
+        Real-Time         Workers            Business Automation
+        Offline           Infrastructure     Intelligent Tools
+             |                 |                 |
+             +-----------------+-----------------+
+                               |
+                               v
+                    Shared Capabilities
+                               |
+             +-----------------+-----------------+
+             |                 |                 |
+             v                 v                 v
+         CoCreateDB       CoCreateMCP       CoCreateAST
+             |                 |                 |
+        Data / Indexes    AI Tool Access    Workflows
+        Persistence       Tool Discovery    Automation
+             |                 |                 |
+             +-----------------+-----------------+
+                               |
+                               v
+                     Supporting Services
+                               |
+                    Security / KMS / Cluster
+                               |
+                      Storage / APIs / Cloud
 ```
 
-This is a conceptual architecture. Components may be deployed independently, integrated selectively, or distributed across different infrastructure environments.
+This diagram represents the conceptual product architecture rather than a strict runtime dependency graph.
 
-### One Ecosystem, Multiple Entry Points
+CoCreateAI and external AI clients can access authorized runtime capabilities through CoCreateMCP.
 
-CoCreateJS does not require developers to adopt every component.
+CoCreateServer provides execution and infrastructure capabilities.
 
-Start with an HTML interface, a JavaScript API, a server, a database, an AI client, or an existing application.
+CoCreateClient provides application interfaces and user experiences.
 
-Expand into additional capabilities as needed.
+Supporting modules extend the ecosystem without requiring every application to use every component.
+
+### From Application to Business Operations
+
+```text
+User / Developer / Team
+          |
+          v
+     CoCreateJS
+          |
+          +-- Build Interfaces
+          |
+          +-- Execute Applications
+          |
+          +-- Connect Data & APIs
+          |
+          +-- Automate Business Workflows
+          |
+          +-- Operate Infrastructure
+          |
+          +-- Enable AI Agents
+          |
+          v
+    Connected Application
+          |
+          v
+    Measurable Outcomes
+```
+
+The ecosystem connects the interface, execution environment, business operations, and intelligent automation.
 
 ---
 
 ## Use Cases
 
+### Websites and Application Builders
+
+Build interfaces, reusable components, and application experiences using declarative HTML and JavaScript.
+
 ### SaaS Platforms
 
-Build multi-tenant applications with shared data, permissions, real-time communication, and distributed infrastructure.
+Develop multi-tenant applications with shared data, permissions, APIs, and distributed infrastructure.
 
-### CRM and ERP Systems
+### CRM and Business Management
 
-Create data-driven applications using declarative interfaces, unified CRUD operations, and reusable workflows.
+Manage customers, contacts, organizations, leads, activities, and operational records.
 
-### Website and Application Builders
+### Sales and Finance
 
-Compose applications from HTML, components, structured data, and configurable behaviors.
+Build workflows around invoices, payments, transactions, customer records, and reporting.
 
-### AI-Powered Application Builders
+### Customer Communications
 
-Use declarative AI interfaces and authorized runtime tools to assist with creating, configuring, and deploying applications.
+Coordinate email, SMS, messaging, customer support, and approval-driven response workflows through connected services.
 
-### Agentic Infrastructure Operations
+### Marketing Automation
 
-Connect compatible AI clients through CoCreateMCP to inspect runtime state, execute workflows, and interact with authorized infrastructure capabilities.
+Research topics, generate content, prepare campaigns, schedule communications, and analyze performance through supported integrations.
 
-### Content Management Systems
+### AI-Powered Business Operations
 
-Manage content, assets, permissions, and publishing workflows through shared application APIs.
+Connect intelligent agents to business data and application tools to assist with daily operations and recurring workflows.
 
-### E-Commerce
+### AI-Assisted Software Development
 
-Build storefronts, administrative systems, product catalogs, and transactional workflows.
+Use connected AI capabilities to assist with application creation, code changes, testing, debugging, and deployment.
 
 ### Real-Time Collaboration
 
-Develop collaborative editors, dashboards, chats, shared documents, and interactive workspaces.
+Build collaborative applications, shared workspaces, dashboards, messaging systems, and live data experiences.
 
 ### Offline and Mobile Applications
 
-Build applications that use local storage and synchronize with configured backend services.
-
-### AI-Powered Applications
-
-Connect AI models to application data, APIs, tools, and authorized workflows.
+Develop applications with local persistence, synchronization, and cross-platform deployment options.
 
 ### API and Workflow Automation
 
-Integrate external services and coordinate structured operations across application systems.
+Connect external services and coordinate application operations through structured workflows.
 
 ### Distributed Infrastructure
 
-Deploy and coordinate applications across cloud providers and geographic regions.
+Deploy and operate applications across servers, regions, and cloud providers.
 
-### Self-Hosted Platforms
+### AI-Assisted Infrastructure Management
 
-Operate applications using integrated runtime, storage, and security components where supported.
+Use authorized runtime tools to analyze telemetry, recommend infrastructure changes, execute approved workflows, and inspect results.
 
 ### Existing Application Modernization
 
-Add real-time communication, data services, automation, AI-accessible tools, or distributed capabilities without rewriting an entire application.
+Add data services, real-time connectivity, automation, AI tools, or distributed capabilities to existing applications.
 
 ---
 
@@ -1584,97 +1250,95 @@ Add real-time communication, data services, automation, AI-accessible tools, or 
 
 ### 1. JavaScript First
 
-Use the language and platform primitives developers already know.
+Use familiar JavaScript primitives and APIs across client, server, and application services.
 
-CoCreateJS favors JavaScript objects, arrays, maps, events, promises, and modules over introducing an entirely separate programming model.
+### 2. Dual API
 
-### 2. Declarative Where Useful
+Support both declarative HTML and programmatic JavaScript where appropriate.
 
-Common application behavior should be expressible through configuration and HTML attributes.
+Developers should be able to choose the interface that best fits the task.
 
-Complex behavior should remain accessible through JavaScript.
+### 3. Primitives Over Unnecessary Abstractions
 
-Neither approach should prevent the other.
-
-### 3. Primitives Over Abstractions
-
-Expose useful capabilities directly.
-
-Avoid adding unnecessary layers when existing JavaScript primitives already provide the required behavior.
+Expose useful capabilities directly without introducing avoidable complexity.
 
 ### 4. Modularity Without Fragmentation
 
-Components should remain independently useful while sharing compatible conventions.
+Keep components independently useful while maintaining consistent conventions across the ecosystem.
 
-A modular ecosystem should not require developers to relearn the same concepts for every module.
+### 5. Database Freedom
 
-### 5. Storage Independence
+Support multiple storage providers through compatible adapters.
 
-Applications should not be permanently coupled to one database provider.
-
-Data access should be adaptable to the storage systems that best fit the deployment.
+Native storage should expand options, not eliminate them.
 
 ### 6. Infrastructure Independence
 
-Applications should be able to move between compatible providers and environments without rebuilding their architecture around each cloud.
+Allow applications to operate across supported cloud providers and deployment environments.
 
 ### 7. Real-Time and Offline by Design
 
-Connectivity and local operation should be application capabilities rather than unrelated afterthoughts.
+Treat connectivity, synchronization, and local operation as core application capabilities.
 
 ### 8. AI-Native, Not AI-Dependent
 
-AI should be able to interact with applications through structured, authorized tools.
+Make application capabilities accessible to intelligent agents without requiring AI for ordinary application execution.
 
-Applications should remain functional without requiring an AI model to execute ordinary operations.
+### 9. From Intent to Execution
 
-### 9. Security Throughout the Lifecycle
+Connect reasoning and decision-making to structured application operations and workflows.
 
-Authentication, permissions, keys, and infrastructure access should be considered at every layer.
+### 10. Security Throughout the Lifecycle
 
-### 10. Progressive Adoption
+Apply authentication, authorization, permissions, and operational safeguards across applications, tools, data, and infrastructure.
 
-Start small.
+### 11. Progressive Adoption
 
-Use the capabilities you need.
+Use the capabilities you need and extend the ecosystem as your requirements grow.
 
-Extend the system as your application grows.
+### 12. Build Applications, Not Infrastructure
 
-### 11. Build Applications, Not Infrastructure
-
-Infrastructure should support the application, not consume the majority of development effort.
+Reduce the operational complexity required to create and run useful applications.
 
 ---
 
 ## Project Repositories
 
-CoCreateJS is organized into focused repositories and packages.
+CoCreateJS is developed by **CoCreate** and organized under the [CoCreateJS GitHub organization](https://github.com/CoCreateJS).
+
+### Main Project
+
+**[CoCreateJS](https://github.com/CoCreateJS/CoCreateJS)**
+
+The main project repository and global documentation for the CoCreateJS ecosystem.
+
+### Primary Pillars
+
+| Project | Repository | Package |
+|---|---|---|
+| **CoCreateClient** | [CoCreateJS/Client](https://github.com/CoCreateJS/Client) | `@cocreate/client` |
+| **CoCreateServer** | [CoCreateJS/Server](https://github.com/CoCreateJS/Server) | `@cocreate/server` |
+| **CoCreateAI** | CoCreateJS organization | `@cocreate/ai` |
+
+### Supporting Technologies
 
 | Project | Description |
 |---|---|
-| [CoCreateJS](https://github.com/CoCreateJS) | GitHub organization and ecosystem |
-| [CoCreateClient](https://github.com/CoCreateJS/CoCreateJS) | Client-side JavaScript runtime |
-| [CoCreateServer](https://github.com/CoCreateJS/CoCreate-server) | Distributed server runtime |
-| [CoCreateDB](https://github.com/CoCreateJS/db) | Storage-agnostic JavaScript database engine |
+| **[CoCreateDB](https://github.com/CoCreateJS/db)** | Native database engine and first-class indexing |
+| **CoCreateMCP** | MCP-compatible access to authorized runtime capabilities |
+| **CoCreateAST** | Structured workflow execution |
+| **CoCreateKMS** | Key and secret management |
+| **CoCreateCluster** | Distributed execution and coordination |
+| **CoCreateCLI** | Development and operational commands |
+| **CoCreateDevice** | Cross-platform and device integrations |
 
-Additional components, modules, and services are maintained within the CoCreateJS organization.
-
-Package naming follows the CoCreate npm scope where applicable.
-
-```text
-@cocreate/client
-@cocreate/server
-@cocreate/db
-@cocreate/ai
-```
-
-See individual repositories for installation requirements, supported versions, and available capabilities.
+Additional modules and integrations are available through the organization and their respective packages.
 
 ---
 
 ## Contributing
 
-CoCreateJS is an open-source project, and contributions are welcome.
+CoCreateJS is an open-source ecosystem, and contributions are welcome.
 
 Contributions may include:
 
@@ -1683,17 +1347,18 @@ Contributions may include:
 - New modules
 - Storage adapters
 - API integrations
-- MCP tools
 - Client enhancements
-- Runtime improvements
-- AI integration improvements
+- Server runtime improvements
+- AI integrations
+- MCP tools
+- Workflow capabilities
 - Security improvements
 - Performance optimizations
 - Tests and examples
 
-Before submitting changes, review the relevant repository's contribution guidelines and existing issues.
+Before contributing, review the relevant repository's existing issues, documentation, and contribution guidelines.
 
-We encourage implementations that preserve the project's core principles: composability, consistent APIs, JavaScript-first development, and infrastructure independence.
+We encourage implementations that preserve the project's core principles: JavaScript-first development, consistent APIs, modularity, interoperability, and infrastructure independence.
 
 ---
 
@@ -1701,13 +1366,11 @@ We encourage implementations that preserve the project's core principles: compos
 
 CoCreateJS is distributed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
 
-Individual repositories may contain their own licensing terms or additional notices. Review the license file in the relevant repository before using or distributing a component.
+Individual repositories may contain their own license files or additional notices. Review the relevant repository before using or distributing a component.
 
 ### Commercial Licensing and Enterprise Support
 
-Commercial licensing and enterprise support may be available for organizations requiring proprietary integration, dedicated deployment assistance, or additional operational support.
-
-For inquiries:
+For commercial licensing, enterprise support, integrations, or deployment inquiries:
 
 **Email:** [info@cocreatejs.com](mailto:info@cocreatejs.com)
 
@@ -1719,9 +1382,10 @@ For inquiries:
 
 - **Website:** https://cocreatejs.com
 - **Documentation:** https://cocreatejs.com/docs
-- **GitHub:** https://github.com/CoCreateJS
-- **CoCreateClient:** https://github.com/CoCreateJS/CoCreateJS
-- **CoCreateServer:** https://github.com/CoCreateJS/CoCreate-server
+- **Main GitHub Repository:** https://github.com/CoCreateJS/CoCreateJS
+- **GitHub Organization:** https://github.com/CoCreateJS
+- **CoCreateClient:** https://github.com/CoCreateJS/Client
+- **CoCreateServer:** https://github.com/CoCreateJS/Server
 - **CoCreateDB:** https://github.com/CoCreateJS/db
 - **Contact:** [info@cocreatejs.com](mailto:info@cocreatejs.com)
 
@@ -1729,9 +1393,17 @@ For inquiries:
 
 ## CoCreateJS
 
+### One build. Connects anything. Deploys everywhere.
+
 From the first line of HTML to distributed infrastructure, CoCreateJS brings application development, connectivity, data, security, AI, and deployment together in one JavaScript ecosystem.
 
-Developers build applications. AI agents interact with authorized capabilities. CoCreateJS provides the runtime, data, workflows, and infrastructure that connect them.
+**CoCreateClient** builds the experience.
+
+**CoCreateServer** executes and operates the application.
+
+**CoCreateAI** connects intelligence to the people, processes, and capabilities behind it.
+
+Together, they enable developers, teams, and intelligent agents to build applications, automate business operations, and manage infrastructure through one connected ecosystem.
 
 **Build applications, not infrastructure.**
 
