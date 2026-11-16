@@ -79,7 +79,7 @@ The existing `.github` repository is the parent workspace. The requested checkou
 | `/home/ubuntu/Dev/CoCreate-plugins/rollup` | `plugins/rollup` | `dev` | `f4e1de7d6dc19c5c3a73548e79fc8dff441a79d7` | `https://github.com/CoCreateJS/Rollup.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-plugins/server-ai` | `plugins/server-ai` | `dev` | `4bfcd880f25c19708f20b206d9870df5ac9b79d0` | `https://github.com/frankpagan/CoCreate-server-ai.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-plugins/webpack` | `plugins/webpack` | `dev` | `939805dd6394caf389ec75699d3d2742bc88c1ac` | `https://github.com/CoCreateJS/Webpack.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-server` | `server` | `dev` | `4f2e114e888ce75d3f8af06622274a706548f2d2` | `https://github.com/CoCreateJS/CoCreate-server.git` | `10 changed paths` |
+| `/home/ubuntu/Dev/CoCreate-server` | `modules/server` | `dev` | `4f2e114e888ce75d3f8af06622274a706548f2d2` | `https://github.com/CoCreateJS/CoCreate-server.git` | `10 changed paths` |
 | `/home/ubuntu/Dev/CoCreate-storages/amazon-redshift` | `storages/amazon-redshift` | `dev` | `aa3f29f4ea6fdf683f2e8bbacab7fc24e4887ccd` | `https://github.com/CoCreateJS/amazon-redshift.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/auroradb` | `storages/auroradb` | `dev` | `8d8d71439065d42441ebeb93a9228c8a4f692fd8` | `https://github.com/CoCreateJS/auroradb.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/cockroachdb` | `storages/cockroachdb` | `dev` | `767bb15e17850118bc6bc616110325b3aaf04d31` | `https://github.com/CoCreateJS/cockroachdb.git` | `clean` |
