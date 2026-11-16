@@ -18,7 +18,7 @@ Together, they provide a connected foundation for creating applications, running
 
 ## The Three Pillars
 
-### [CoCreateClient](https://github.com/CoCreateJS/Client)
+### [CoCreateClient](https://github.com/CoCreateJS/client)
 
 **One code. Build anything. Run anywhere.**
 
@@ -335,7 +335,7 @@ CoCreateClient uses standard web technologies to support websites, dashboards, b
 
 Related modules such as CoCreateDevice extend this direction through device-specific integration and packaging.
 
-**Repository:** [CoCreateJS/Client](https://github.com/CoCreateJS/Client)
+**Repository:** [CoCreateJS/client](https://github.com/CoCreateJS/client)
 
 **Package:** `@cocreate/client`
 
@@ -1316,7 +1316,7 @@ The main project repository and global documentation for the CoCreateJS ecosyste
 
 | Project | Repository | Package |
 |---|---|---|
-| **CoCreateClient** | [CoCreateJS/Client](https://github.com/CoCreateJS/Client) | `@cocreate/client` |
+| **CoCreateClient** | [CoCreateJS/client](https://github.com/CoCreateJS/client) | `@cocreate/client` |
 | **CoCreateServer** | [CoCreateJS/Server](https://github.com/CoCreateJS/Server) | `@cocreate/server` |
 | **CoCreateAI** | CoCreateJS organization | `@cocreate/ai` |
 
@@ -1384,7 +1384,7 @@ For commercial licensing, enterprise support, integrations, or deployment inquir
 - **Documentation:** https://cocreatejs.com/docs
 - **Main GitHub Repository:** https://github.com/CoCreateJS/CoCreateJS
 - **GitHub Organization:** https://github.com/CoCreateJS
-- **CoCreateClient:** https://github.com/CoCreateJS/Client
+- **CoCreateClient:** https://github.com/CoCreateJS/client
 - **CoCreateServer:** https://github.com/CoCreateJS/Server
 - **CoCreateDB:** https://github.com/CoCreateJS/db
 - **Contact:** [info@cocreatejs.com](mailto:info@cocreatejs.com)

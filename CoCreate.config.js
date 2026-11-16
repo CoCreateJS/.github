@@ -12,15 +12,15 @@ module.exports = {
         },
         "app": {
             "path": "./app",
-            "repo": "https://github.com/CoCreateJS/CoCreate-app.git"
+            "repo": "https://github.com/CoCreateJS/app.git"
         },
         "app-template": {
             "path": "./app-template",
-            "repo": "https://github.com/CoCreateJS/CoCreate-app-template.git"
+            "repo": "https://github.com/CoCreateJS/app-template.git"
         },
         "client": {
             "path": "./client",
-            "repo": "https://github.com/CoCreateJS/CoCreate-client.git",
+            "repo": "https://github.com/CoCreateJS/client.git",
             "exclude": [
                 "fs/webpack"
             ]

@@ -1,14 +1,14 @@
 [submodule "app"]
 	path = app
-	url = https://github.com/CoCreateJS/CoCreate-app.git
+	url = https://github.com/CoCreateJS/app.git
 
 [submodule "app-template"]
 	path = app-template
-	url = https://github.com/CoCreateJS/CoCreate-app-template.git
+	url = https://github.com/CoCreateJS/app-template.git
 
 [submodule "client"]
 	path = client
-	url = https://github.com/CoCreateJS/CoCreate-client.git
+	url = https://github.com/CoCreateJS/client.git
 
 [submodule "server"]
 	path = server
