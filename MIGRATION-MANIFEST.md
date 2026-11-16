@@ -78,7 +78,7 @@ This inventory records the current child checkout paths, branches, HEADs, origin
 | `/home/ubuntu/Dev/CoCreate-modules/workflows` | `modules/workflows` | `dev` | `bd9ed43d3a37eadf4e289c533ac4fa4df441cbce` | `https://github.com/CoCreateJS/workflows.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-plugins/rollup` | `plugins/rollup` | `dev` | `f4e1de7d6dc19c5c3a73548e79fc8dff441a79d7` | `https://github.com/CoCreateJS/Rollup.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-plugins/server-ai` | `plugins/server-ai` | `dev` | `156ec42a02770a51b08e6621f6f80a3a3bb9cc35` | `https://github.com/frankpagan/CoCreate-server-ai.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-plugins/webpack` | `plugins/webpack` | `dev` | `939805dd6394caf389ec75699d3d2742bc88c1ac` | `https://github.com/CoCreateJS/Webpack.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-plugins/webpack` | `plugins/webpack` | `dev` | `939805dd6394caf389ec75699d3d2742bc88c1ac` | `https://github.com/CoCreateJS/webpack.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/amazon-redshift` | `storages/amazon-redshift` | `dev` | `aa3f29f4ea6fdf683f2e8bbacab7fc24e4887ccd` | `https://github.com/CoCreateJS/amazon-redshift.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/auroradb` | `storages/auroradb` | `dev` | `8d8d71439065d42441ebeb93a9228c8a4f692fd8` | `https://github.com/CoCreateJS/auroradb.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/cockroachdb` | `storages/cockroachdb` | `dev` | `767bb15e17850118bc6bc616110325b3aaf04d31` | `https://github.com/CoCreateJS/cockroachdb.git` | `clean` |

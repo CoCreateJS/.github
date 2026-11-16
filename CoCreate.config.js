@@ -510,7 +510,7 @@ module.exports = {
         },
         "webpack": {
             "path": "./plugins/webpack",
-            "repo": "https://github.com/CoCreateJS/Webpack.git",
+            "repo": "https://github.com/CoCreateJS/webpack.git",
             "exclude": [
                 "fs/webpack"
             ]

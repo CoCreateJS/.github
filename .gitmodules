@@ -276,7 +276,7 @@
 
 [submodule "plugins/webpack"]
 	path = plugins/webpack
-	url = https://github.com/CoCreateJS/Webpack.git
+	url = https://github.com/CoCreateJS/webpack.git
 
 [submodule "storages/amazon-redshift"]
 	path = storages/amazon-redshift
