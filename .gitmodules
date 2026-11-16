@@ -12,7 +12,7 @@
 
 [submodule "server"]
 	path = modules/server
-	url = https://github.com/CoCreateJS/CoCreate-server.git
+	url = https://github.com/CoCreateJS/server.git
 
 [submodule "modules/actions"]
 	path = modules/actions

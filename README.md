@@ -32,7 +32,7 @@ Create websites, dashboards, business applications, collaborative experiences, P
 
 **Package:** `@cocreate/client`
 
-### [CoCreateServer](https://github.com/CoCreateJS/Server)
+### [CoCreateServer](https://github.com/CoCreateJS/server)
 
 **One runtime. Any app. Every cloud.**
 
@@ -423,7 +423,7 @@ This allows AI agents to interact with the running application environment rathe
 
 An authorized agent may inspect application state, query data, execute workflows, or invoke infrastructure operations using the same underlying runtime capabilities available to application developers.
 
-**Repository:** [CoCreateJS/Server](https://github.com/CoCreateJS/Server)
+**Repository:** [CoCreateJS/server](https://github.com/CoCreateJS/server)
 
 **Package:** `@cocreate/server`
 
@@ -1317,7 +1317,7 @@ The main project repository and global documentation for the CoCreateJS ecosyste
 | Project | Repository | Package |
 |---|---|---|
 | **CoCreateClient** | [CoCreateJS/client](https://github.com/CoCreateJS/client) | `@cocreate/client` |
-| **CoCreateServer** | [CoCreateJS/Server](https://github.com/CoCreateJS/Server) | `@cocreate/server` |
+| **CoCreateServer** | [CoCreateJS/server](https://github.com/CoCreateJS/server) | `@cocreate/server` |
 | **CoCreateAI** | CoCreateJS organization | `@cocreate/ai` |
 
 ### Supporting Technologies
@@ -1385,7 +1385,7 @@ For commercial licensing, enterprise support, integrations, or deployment inquir
 - **Main GitHub Repository:** https://github.com/CoCreateJS/CoCreateJS
 - **GitHub Organization:** https://github.com/CoCreateJS
 - **CoCreateClient:** https://github.com/CoCreateJS/client
-- **CoCreateServer:** https://github.com/CoCreateJS/Server
+- **CoCreateServer:** https://github.com/CoCreateJS/server
 - **CoCreateDB:** https://github.com/CoCreateJS/db
 - **Contact:** [info@cocreatejs.com](mailto:info@cocreatejs.com)
 

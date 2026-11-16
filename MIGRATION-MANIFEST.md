@@ -1,28 +1,27 @@
 # CoCreateJS local migration manifest
 
-Parent: `/home/ubuntu/Dev/CoCreateJS`
-Parent remote: `https://github.com/CoCreateJS/.github.git`
-Parent branch/HEAD: `main` / `9981b15868e520970b59c656f85a3e6a7e8d026e`
+Parent repository: `https://github.com/CoCreateJS/.github.git`
+Parent branch: `main`
 
-The existing `.github` repository is the parent workspace. The requested checkouts were moved under the new category names; original paths below are reconstructed from their former top-level directories. Child branches, HEADs, origins, and working-tree states are recorded at manifest generation. No commits were created and no pushes occurred.
+This inventory records the current child checkout paths, branches, HEADs, origins, and working-tree states. The original local paths are reconstructed from their former top-level directories. `CoCreateDB` and its backup remain outside this workspace. No tests were run as part of repository synchronization.
 
 | Original path | Workspace path | Branch | HEAD | Origin | Working tree |
 |---|---|---|---|---|---|
-| `/home/ubuntu/Dev/CoCreate-app` | `app` | `dev` | `5c16c38a7630dcea0ff602d8af1c3c1f6280b4aa` | `https://github.com/CoCreateJS/CoCreate-app.git` | `16 changed paths` |
-| `/home/ubuntu/Dev/CoCreate-app-template` | `app-template` | `dev` | `ea6c21fbceb209bffd2ecfd36f3c37a55d1335f9` | `https://github.com/CoCreateJS/CoCreate-app-template.git` | `47 changed paths` |
-| `/home/ubuntu/Dev/CoCreate-client` | `client` | `dev` | `d2eec33aa2c044c7b2427655a7585d267a3f09ce` | `https://github.com/CoCreateJS/CoCreate-client.git` | `2 changed paths` |
+| `/home/ubuntu/Dev/CoCreate-app` | `app` | `dev` | `a5d3321556731457a9c8e10f5f67f70d91735e72` | `https://github.com/CoCreateJS/app.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-app-template` | `app-template` | `dev` | `ba4cf1a67adf97118b5c64b0dba2f3136d7a33a6` | `https://github.com/CoCreateJS/app-template.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-client` | `client` | `dev` | `d08ea3fc1deb44ab82f667de1ef89a07f7783c85` | `https://github.com/CoCreateJS/client.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/actions` | `modules/actions` | `dev` | `1545a5dac48b5f612d0d886088980b0f46921146` | `https://github.com/CoCreateJS/Actions.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-modules/api` | `modules/api` | `dev` | `9589a711983eb82c3ecd97a852c732fbcb29580b` | `https://github.com/CoCreateJS/api.git` | `1 changed paths` |
-| `/home/ubuntu/Dev/CoCreate-modules/apps` | `modules/apps` | `dev` | `450a8b0dcccbca6661b0c3b0a2668c2dc52b2240` | `https://github.com/CoCreateJS/apps.git` | `36 changed paths` |
+| `/home/ubuntu/Dev/CoCreate-modules/api` | `modules/api` | `dev` | `c5d4d4b3a93aa9af2307ff45cf32a22416a15a5d` | `https://github.com/CoCreateJS/api.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-modules/apps` | `modules/apps` | `dev` | `c7bf033f15ee281af09ce5d978f807ac32365e19` | `https://github.com/CoCreateJS/apps.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/aria` | `modules/aria` | `dev` | `c59ef001e4f59d2ba54e5a2c004530eba3146b9a` | `https://github.com/CoCreateJS/aria.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/authenticate` | `modules/authenticate` | `dev` | `8aab6e3385da16b7c24303523e06b99fe0d36390` | `https://github.com/CoCreateJS/authenticate.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-modules/authorize` | `modules/authorize` | `dev` | `e67de710f6b261fa90f6e0b8129b68ea968206ae` | `https://github.com/CoCreateJS/authorize.git` | `1 changed paths` |
-| `/home/ubuntu/Dev/CoCreate-modules/autoscaler` | `modules/autoscaler` | `dev` | `a57ccab03a174d50c325a29ed6efe8963e1e278b` | `https://github.com/CoCreateJS/autoscaler.git` | `1 changed paths` |
+| `/home/ubuntu/Dev/CoCreate-modules/authorize` | `modules/authorize` | `dev` | `de8bdf20539ecc8ef8678330d9c62d77b4c16269` | `https://github.com/CoCreateJS/authorize.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-modules/autoscaler` | `modules/autoscaler` | `dev` | `648bcbfe714f2ee5e81f576ec371588d5be83433` | `https://github.com/CoCreateJS/autoscaler.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/badging` | `modules/badging` | `dev` | `41d62e60836abe9a73ee39c3a8651af260b3645b` | `https://github.com/CoCreateJS/badging.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/cache` | `modules/cache` | `dev` | `f57a5f9e382fe91f04d1891a8402ac6bd0e6be95` | `https://github.com/CoCreateJS/cache.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-modules/cli` | `modules/cli` | `dev` | `419d2732dbfb2c5f467fa040abd193d4ed156d0f` | `https://github.com/CoCreateJS/cli.git` | `4 changed paths` |
+| `/home/ubuntu/Dev/CoCreate-modules/cli` | `modules/cli` | `dev` | `9207a02a1961676bdaba2b61151f4dd8a9173db9` | `https://github.com/CoCreateJS/cli.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/clipboard` | `modules/clipboard` | `dev` | `a1a6bdb19ffce6679dc499d12893f78444ada994` | `https://github.com/CoCreateJS/clipboard.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-modules/cluster` | `modules/cluster` | `dev` | `78fe5eca4dd5886b340abbce64f53222bb367dd7` | `https://github.com/CoCreateJS/cluster.git` | `2 changed paths` |
+| `/home/ubuntu/Dev/CoCreate-modules/cluster` | `modules/cluster` | `dev` | `07cb6cb8f38ef15cdc9c4cc3b6fa93b21bca294f` | `https://github.com/CoCreateJS/cluster.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/config` | `modules/config` | `dev` | `7c45ac9c6cf64afce581b57a2ec2a20a56567063` | `https://github.com/CoCreateJS/config.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/contact-picker` | `modules/contact-picker` | `dev` | `24edca46a28685c5bb2094aa0b058f583f438daa` | `https://github.com/CoCreateJS/contact-picker.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/container` | `modules/container` | `dev` | `fb3d3c869cb6e711ad6ca9e96401bfab47f4693e` | `https://github.com/CoCreateJS/container.git` | `clean` |
@@ -31,9 +30,9 @@ The existing `.github` repository is the parent workspace. The requested checkou
 | `/home/ubuntu/Dev/CoCreate-modules/crud` | `modules/crud` | `dev` | `d3dc7f86d0350063351f8dd44558ff7bbda87b43` | `https://github.com/CoCreateJS/crud.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/css-parser` | `modules/css-parser` | `dev` | `1818d27bdf2ebbb28dc799489a701a197a1d673d` | `https://github.com/CoCreateJS/css-parser.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/cursors` | `modules/cursors` | `dev` | `fce84d14db63c6d1ac0b09cb45b133e973734e6b` | `https://github.com/CoCreateJS/cursors.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-modules/db` | `modules/db` | `dev` | `7b6d685c2370127da970710277ca774e3fb5fe57` | `https://github.com/CoCreateJS/db.git` | `90 changed paths` |
+| `/home/ubuntu/Dev/CoCreate-modules/db` | `modules/db` | `dev` | `8025410e4fe92eec304b2f9cd57acce75a421506` | `https://github.com/CoCreateJS/db.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/docs` | `modules/docs` | `dev` | `64c7f852e783c31b705e9cafa6dadf44b027e4b5` | `https://github.com/CoCreateJS/docs.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-modules/editor` | `modules/editor` | `dev` | `6d65e72e18965072d29b3ceb0cd73e26fd152dca` | `https://github.com/CoCreateJS/editor.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-modules/editor` | `modules/editor` | `dev` | `b8d832a8c73e0e4119d5335b25fd1c7b8d183e70` | `https://github.com/CoCreateJS/editor.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/element-prototype` | `modules/element-prototype` | `dev` | `82a2b5b70cedd316fa6e2eb73c3ea22c8cdbadcc` | `https://github.com/CoCreateJS/element-prototype.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/elements` | `modules/elements` | `dev` | `8fca08e565846a016e2d37fd2880058da5339299` | `https://github.com/CoCreateJS/elements.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/events` | `modules/events` | `dev` | `d0d5f317bc4f7da534d6b8c503d5cbdc5678bcf0` | `https://github.com/CoCreateJS/events.git` | `clean` |
@@ -59,9 +58,10 @@ The existing `.github` repository is the parent workspace. The requested checkou
 | `/home/ubuntu/Dev/CoCreate-modules/scroll` | `modules/scroll` | `dev` | `d9f857f6eb2b38703f67ec8e1aa575ac9f4c74d7` | `https://github.com/CoCreateJS/scroll.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/scrollbar` | `modules/scrollbar` | `dev` | `1c2a0f024d98ca0fd8b0a6f677674b950a23ddd3` | `https://github.com/cocreatejs/scrollbar.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/search` | `modules/search` | `dev` | `ad472434135995d460212ee025822c09bef65ec8` | `https://github.com/CoCreateJS/search.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-server` | `modules/server` | `dev` | `a2d81e4bdbfc3d48a39103af591e2f8670605efc` | `https://github.com/CoCreateJS/server.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/service-worker` | `modules/service-worker` | `dev` | `405e3c5a226f644781c20a77c24dd16b45c2bc10` | `https://github.com/CoCreateJS/service-worker.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/sitemap` | `modules/sitemap` | `dev` | `50d763c173a0bc702fc2d09f1c4969cf94b98176` | `https://github.com/CoCreateJS/sitemap.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-modules/socket` | `modules/socket` | `dev` | `6338f73531f2d289ecb9fc6f410637fac8721ebf` | `https://github.com/CoCreateJS/socket.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-modules/socket` | `modules/socket` | `dev` | `25b375aa6d9981c8f49deed9a99a4664610bbf42` | `https://github.com/CoCreateJS/socket.git` | `clean` |
 | `not present before migration; existing CLI mapping` | `modules/socket-client` | `main` | `d01976e79183325cecd79002ca939fb7e1fb9c91` | `https://github.com/CoCreateJS/socket-client.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/speech-recognition` | `modules/speech-recognition` | `dev` | `b3aa9a1348d6f15c6836e510f0a047a0a48dfdab` | `https://github.com/CoCreateJS/speech-recognition.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/speech-synthesis` | `modules/speech-synthesis` | `dev` | `95e4d7244f169e49ecbc52f3e00dc0b08a6752e7` | `https://github.com/CoCreateJS/speech-synthesis.git` | `clean` |
@@ -77,9 +77,8 @@ The existing `.github` repository is the parent workspace. The requested checkou
 | `/home/ubuntu/Dev/CoCreate-modules/web-share` | `modules/web-share` | `dev` | `ff12630f377526ca83f7a22aa5b021f7e0e76769` | `https://github.com/CoCreateJS/web-share.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-modules/workflows` | `modules/workflows` | `dev` | `bd9ed43d3a37eadf4e289c533ac4fa4df441cbce` | `https://github.com/CoCreateJS/workflows.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-plugins/rollup` | `plugins/rollup` | `dev` | `f4e1de7d6dc19c5c3a73548e79fc8dff441a79d7` | `https://github.com/CoCreateJS/Rollup.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-plugins/server-ai` | `plugins/server-ai` | `dev` | `4bfcd880f25c19708f20b206d9870df5ac9b79d0` | `https://github.com/frankpagan/CoCreate-server-ai.git` | `clean` |
+| `/home/ubuntu/Dev/CoCreate-plugins/server-ai` | `plugins/server-ai` | `dev` | `156ec42a02770a51b08e6621f6f80a3a3bb9cc35` | `https://github.com/frankpagan/CoCreate-server-ai.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-plugins/webpack` | `plugins/webpack` | `dev` | `939805dd6394caf389ec75699d3d2742bc88c1ac` | `https://github.com/CoCreateJS/Webpack.git` | `clean` |
-| `/home/ubuntu/Dev/CoCreate-server` | `modules/server` | `dev` | `4f2e114e888ce75d3f8af06622274a706548f2d2` | `https://github.com/CoCreateJS/CoCreate-server.git` | `10 changed paths` |
 | `/home/ubuntu/Dev/CoCreate-storages/amazon-redshift` | `storages/amazon-redshift` | `dev` | `aa3f29f4ea6fdf683f2e8bbacab7fc24e4887ccd` | `https://github.com/CoCreateJS/amazon-redshift.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/auroradb` | `storages/auroradb` | `dev` | `8d8d71439065d42441ebeb93a9228c8a4f692fd8` | `https://github.com/CoCreateJS/auroradb.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/cockroachdb` | `storages/cockroachdb` | `dev` | `767bb15e17850118bc6bc616110325b3aaf04d31` | `https://github.com/CoCreateJS/cockroachdb.git` | `clean` |
@@ -104,4 +103,4 @@ The existing `.github` repository is the parent workspace. The requested checkou
 | `/home/ubuntu/Dev/CoCreate-storages/turso` | `storages/turso` | `dev` | `c2e76c48c145bab4f1b26cdd7db043bd4045967d` | `https://github.com/CoCreateJS/turso.git` | `clean` |
 | `/home/ubuntu/Dev/CoCreate-storages/yugabytedb` | `storages/yugabytedb` | `dev` | `a6190da90466778dce9bbfbeb5aefc2b9c5e02b7` | `https://github.com/CoCreateJS/yugabytedb.git` | `clean` |
 
-Exceptions: `modules/mcp` has no commit and is retained as untracked local content rather than a submodule; `storages/storage-bundler` is ordinary local content, not a Git repository; `node_modules` contains local workspace links and is ignored. `modules/socket-client` was absent locally and was cloned from the URL already configured by the existing CLI mapping. `CoCreateDB` and its backup remain outside this workspace.
+Exceptions: `modules/mcp` has no commit and remains local content rather than a submodule; `storages/storage-bundler` is ordinary local content, not a Git repository; `node_modules` contains local workspace links and is ignored. `modules/socket-client` was absent locally and was cloned from the URL already configured by the CLI.
