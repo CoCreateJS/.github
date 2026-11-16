@@ -1,0 +1,374 @@
+[submodule "app"]
+	path = app
+	url = https://github.com/CoCreateJS/CoCreate-app.git
+
+[submodule "app-template"]
+	path = app-template
+	url = https://github.com/CoCreateJS/CoCreate-app-template.git
+
+[submodule "client"]
+	path = client
+	url = https://github.com/CoCreateJS/CoCreate-client.git
+
+[submodule "server"]
+	path = server
+	url = https://github.com/CoCreateJS/CoCreate-server.git
+
+[submodule "modules/actions"]
+	path = modules/actions
+	url = https://github.com/CoCreateJS/Actions.git
+
+[submodule "modules/api"]
+	path = modules/api
+	url = https://github.com/CoCreateJS/api.git
+
+[submodule "modules/apps"]
+	path = modules/apps
+	url = https://github.com/CoCreateJS/apps.git
+
+[submodule "modules/aria"]
+	path = modules/aria
+	url = https://github.com/CoCreateJS/aria.git
+
+[submodule "modules/authenticate"]
+	path = modules/authenticate
+	url = https://github.com/CoCreateJS/authenticate.git
+
+[submodule "modules/authorize"]
+	path = modules/authorize
+	url = https://github.com/CoCreateJS/authorize.git
+
+[submodule "modules/autoscaler"]
+	path = modules/autoscaler
+	url = https://github.com/CoCreateJS/autoscaler.git
+
+[submodule "modules/badging"]
+	path = modules/badging
+	url = https://github.com/CoCreateJS/badging.git
+
+[submodule "modules/cache"]
+	path = modules/cache
+	url = https://github.com/CoCreateJS/cache.git
+
+[submodule "modules/cli"]
+	path = modules/cli
+	url = https://github.com/CoCreateJS/cli.git
+
+[submodule "modules/clipboard"]
+	path = modules/clipboard
+	url = https://github.com/CoCreateJS/clipboard.git
+
+[submodule "modules/cluster"]
+	path = modules/cluster
+	url = https://github.com/CoCreateJS/cluster.git
+
+[submodule "modules/config"]
+	path = modules/config
+	url = https://github.com/CoCreateJS/config.git
+
+[submodule "modules/contact-picker"]
+	path = modules/contact-picker
+	url = https://github.com/CoCreateJS/contact-picker.git
+
+[submodule "modules/container"]
+	path = modules/container
+	url = https://github.com/CoCreateJS/container.git
+
+[submodule "modules/crdt"]
+	path = modules/crdt
+	url = https://github.com/CoCreateJS/crdt.git
+
+[submodule "modules/cron"]
+	path = modules/cron
+	url = https://github.com/CoCreateJS/cron.git
+
+[submodule "modules/crud"]
+	path = modules/crud
+	url = https://github.com/CoCreateJS/crud.git
+
+[submodule "modules/css-parser"]
+	path = modules/css-parser
+	url = https://github.com/CoCreateJS/css-parser.git
+
+[submodule "modules/cursors"]
+	path = modules/cursors
+	url = https://github.com/CoCreateJS/cursors.git
+
+[submodule "modules/db"]
+	path = modules/db
+	url = https://github.com/CoCreateJS/db.git
+
+[submodule "modules/docs"]
+	path = modules/docs
+	url = https://github.com/CoCreateJS/docs.git
+
+[submodule "modules/editor"]
+	path = modules/editor
+	url = https://github.com/CoCreateJS/editor.git
+
+[submodule "modules/element-prototype"]
+	path = modules/element-prototype
+	url = https://github.com/CoCreateJS/element-prototype.git
+
+[submodule "modules/elements"]
+	path = modules/elements
+	url = https://github.com/CoCreateJS/elements.git
+
+[submodule "modules/events"]
+	path = modules/events
+	url = https://github.com/CoCreateJS/events.git
+
+[submodule "modules/file"]
+	path = modules/file
+	url = https://github.com/CoCreateJS/file.git
+
+[submodule "modules/filter"]
+	path = modules/filter
+	url = https://github.com/CoCreateJS/filter.git
+
+[submodule "modules/fullscreen"]
+	path = modules/fullscreen
+	url = https://github.com/CoCreateJS/fullscreen.git
+
+[submodule "modules/geolocation"]
+	path = modules/geolocation
+	url = https://github.com/CoCreateJS/geolocation.git
+
+[submodule "modules/kms"]
+	path = modules/kms
+	url = https://github.com/CoCreateJS/kms.git
+
+[submodule "modules/lazy-loader"]
+	path = modules/lazy-loader
+	url = https://github.com/CoCreateJS/lazy-loader.git
+
+[submodule "modules/loadtest"]
+	path = modules/loadtest
+	url = https://github.com/CoCreateJS/loadtest.git
+
+[submodule "modules/local-storage"]
+	path = modules/local-storage
+	url = https://github.com/CoCreateJS/local-storage.git
+
+[submodule "modules/log"]
+	path = modules/log
+	url = https://github.com/CoCreateJS/log.git
+
+[submodule "modules/notification"]
+	path = modules/notification
+	url = https://github.com/CoCreateJS/notification.git
+
+[submodule "modules/observer"]
+	path = modules/observer
+	url = https://github.com/CoCreateJS/observer.git
+
+[submodule "modules/organizations"]
+	path = modules/organizations
+	url = https://github.com/CoCreateJS/organizations.git
+
+[submodule "modules/plugins"]
+	path = modules/plugins
+	url = https://github.com/CoCreateJS/plugins.git
+
+[submodule "modules/position"]
+	path = modules/position
+	url = https://github.com/CoCreateJS/position.git
+
+[submodule "modules/print"]
+	path = modules/print
+	url = https://github.com/CoCreateJS/print.git
+
+[submodule "modules/pwa"]
+	path = modules/pwa
+	url = https://github.com/CoCreateJS/pwa.git
+
+[submodule "modules/render"]
+	path = modules/render
+	url = https://github.com/CoCreateJS/render.git
+
+[submodule "modules/resize"]
+	path = modules/resize
+	url = https://github.com/CoCreateJS/resize.git
+
+[submodule "modules/scroll"]
+	path = modules/scroll
+	url = https://github.com/CoCreateJS/scroll.git
+
+[submodule "modules/scrollbar"]
+	path = modules/scrollbar
+	url = https://github.com/cocreatejs/scrollbar.git
+
+[submodule "modules/search"]
+	path = modules/search
+	url = https://github.com/CoCreateJS/search.git
+
+[submodule "modules/service-worker"]
+	path = modules/service-worker
+	url = https://github.com/CoCreateJS/service-worker.git
+
+[submodule "modules/sitemap"]
+	path = modules/sitemap
+	url = https://github.com/CoCreateJS/sitemap.git
+
+[submodule "modules/socket"]
+	path = modules/socket
+	url = https://github.com/CoCreateJS/socket.git
+
+[submodule "modules/speech-recognition"]
+	path = modules/speech-recognition
+	url = https://github.com/CoCreateJS/speech-recognition.git
+
+[submodule "modules/speech-synthesis"]
+	path = modules/speech-synthesis
+	url = https://github.com/CoCreateJS/speech-synthesis.git
+
+[submodule "modules/state"]
+	path = modules/state
+	url = https://github.com/CoCreateJS/state.git
+
+[submodule "modules/telemetry"]
+	path = modules/telemetry
+	url = https://github.com/CoCreateJS/telemetry.git
+
+[submodule "modules/tls"]
+	path = modules/tls
+	url = https://github.com/CoCreateJS/tls.git
+
+[submodule "modules/usage"]
+	path = modules/usage
+	url = https://github.com/CoCreateJS/usage.git
+
+[submodule "modules/users"]
+	path = modules/users
+	url = https://github.com/CoCreateJS/users.git
+
+[submodule "modules/utils"]
+	path = modules/utils
+	url = https://github.com/CoCreateJS/utils.git
+
+[submodule "modules/validation"]
+	path = modules/validation
+	url = https://github.com/CoCreateJS/validation.git
+
+[submodule "modules/wake-lock"]
+	path = modules/wake-lock
+	url = https://github.com/CoCreateJS/wake-lock.git
+
+[submodule "modules/waveform"]
+	path = modules/waveform
+	url = https://github.com/CoCreateJS/waveform.git
+
+[submodule "modules/web-share"]
+	path = modules/web-share
+	url = https://github.com/CoCreateJS/web-share.git
+
+[submodule "modules/workflows"]
+	path = modules/workflows
+	url = https://github.com/CoCreateJS/workflows.git
+
+[submodule "plugins/rollup"]
+	path = plugins/rollup
+	url = https://github.com/CoCreateJS/Rollup.git
+
+[submodule "plugins/server-ai"]
+	path = plugins/server-ai
+	url = https://github.com/frankpagan/CoCreate-server-ai.git
+
+[submodule "plugins/webpack"]
+	path = plugins/webpack
+	url = https://github.com/CoCreateJS/Webpack.git
+
+[submodule "storages/amazon-redshift"]
+	path = storages/amazon-redshift
+	url = https://github.com/CoCreateJS/amazon-redshift.git
+
+[submodule "storages/auroradb"]
+	path = storages/auroradb
+	url = https://github.com/CoCreateJS/auroradb.git
+
+[submodule "storages/cockroachdb"]
+	path = storages/cockroachdb
+	url = https://github.com/CoCreateJS/cockroachdb.git
+
+[submodule "storages/cosmosdb"]
+	path = storages/cosmosdb
+	url = https://github.com/CoCreateJS/cosmosdb.git
+
+[submodule "storages/documentdb"]
+	path = storages/documentdb
+	url = https://github.com/CoCreateJS/documentdb.git
+
+[submodule "storages/dqlite"]
+	path = storages/dqlite
+	url = https://github.com/CoCreateJS/dqlite.git
+
+[submodule "storages/dynamodb"]
+	path = storages/dynamodb
+	url = https://github.com/CoCreateJS/dynamodb.git
+
+[submodule "storages/ferretdb"]
+	path = storages/ferretdb
+	url = https://github.com/CoCreateJS/ferretdb.git
+
+[submodule "storages/firestore"]
+	path = storages/firestore
+	url = https://github.com/CoCreateJS/firestore.git
+
+[submodule "storages/indexeddb"]
+	path = storages/indexeddb
+	url = https://github.com/CoCreateJS/indexeddb.git
+
+[submodule "storages/mariadb"]
+	path = storages/mariadb
+	url = https://github.com/CoCreateJS/mariadb.git
+
+[submodule "storages/mongodb"]
+	path = storages/mongodb
+	url = https://github.com/CoCreateJS/mongodb.git
+
+[submodule "storages/mysql"]
+	path = storages/mysql
+	url = https://github.com/CoCreateJS/mysql.git
+
+[submodule "storages/oracledb"]
+	path = storages/oracledb
+	url = https://github.com/CoCreateJS/oracledb.git
+
+[submodule "storages/planetscale"]
+	path = storages/planetscale
+	url = https://github.com/CoCreateJS/planetscale.git
+
+[submodule "storages/postgresql"]
+	path = storages/postgresql
+	url = https://github.com/CoCreateJS/postgresql.git
+
+[submodule "storages/qdrant"]
+	path = storages/qdrant
+	url = https://github.com/CoCreateJS/qdrant.git
+
+[submodule "storages/rqlite"]
+	path = storages/rqlite
+	url = https://github.com/CoCreateJS/rqlite.git
+
+[submodule "storages/sqlite"]
+	path = storages/sqlite
+	url = https://github.com/CoCreateJS/sqlite.git
+
+[submodule "storages/tidb"]
+	path = storages/tidb
+	url = https://github.com/CoCreateJS/tidb.git
+
+[submodule "storages/timescaledb"]
+	path = storages/timescaledb
+	url = https://github.com/CoCreateJS/timescaledb.git
+
+[submodule "storages/turso"]
+	path = storages/turso
+	url = https://github.com/CoCreateJS/turso.git
+
+[submodule "storages/yugabytedb"]
+	path = storages/yugabytedb
+	url = https://github.com/CoCreateJS/yugabytedb.git
+[submodule "modules/socket-client"]
+	path = modules/socket-client
+	url = https://github.com/CoCreateJS/socket-client.git
