@@ -71,6 +71,10 @@ module.exports = {
                 "fs/webpack"
             ]
         },
+        "ast": {
+            "path": "./modules/ast",
+            "repo": "https://github.com/CoCreateJS/ast.git"
+        },
         "badging": {
             "path": "./modules/badging",
             "repo": "https://github.com/CoCreateJS/badging.git"

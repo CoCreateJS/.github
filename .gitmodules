@@ -42,6 +42,10 @@
 	path = modules/autoscaler
 	url = https://github.com/CoCreateJS/autoscaler.git
 
+[submodule "modules/ast"]
+	path = modules/ast
+	url = https://github.com/CoCreateJS/ast.git
+
 [submodule "modules/badging"]
 	path = modules/badging
 	url = https://github.com/CoCreateJS/badging.git
