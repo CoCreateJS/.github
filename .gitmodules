@@ -373,6 +373,3 @@
 [submodule "storages/yugabytedb"]
 	path = storages/yugabytedb
 	url = https://github.com/CoCreateJS/yugabytedb.git
-[submodule "modules/socket-client"]
-	path = modules/socket-client
-	url = https://github.com/CoCreateJS/socket-client.git

@@ -334,10 +334,6 @@ module.exports = {
             "exclude": [
                 "fs/webpack"
             ]
-        },
-        "socket-client": {
-            "path": "./modules/socket-client",
-            "repo": "https://github.com/CoCreateJS/socket-client.git"
         }
     },
     "storages": {
