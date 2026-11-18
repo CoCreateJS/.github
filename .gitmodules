@@ -11,7 +11,7 @@
 	url = https://github.com/CoCreateJS/client.git
 
 [submodule "server"]
-	path = modules/server
+	path = server
 	url = https://github.com/CoCreateJS/server.git
 
 [submodule "modules/actions"]
@@ -373,3 +373,7 @@
 [submodule "storages/yugabytedb"]
 	path = storages/yugabytedb
 	url = https://github.com/CoCreateJS/yugabytedb.git
+[submodule "modules/coson"]
+	path = modules/coson
+	url = https://github.com/CoCreateJS/coson.git
+	branch = dev

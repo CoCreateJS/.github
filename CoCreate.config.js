@@ -26,7 +26,7 @@ module.exports = {
             ]
         },
         "server": {
-            "path": "./modules/server",
+            "path": "./server",
             "repo": "https://github.com/CoCreateJS/server.git",
             "exclude": [
                 "fs/webpack"
@@ -112,6 +112,10 @@ module.exports = {
         "container": {
             "path": "./modules/container",
             "repo": "https://github.com/CoCreateJS/container.git"
+        },
+        "coson": {
+            "path": "./modules/coson",
+            "repo": "https://github.com/CoCreateJS/coson.git"
         },
         "crdt": {
             "path": "./modules/crdt",
